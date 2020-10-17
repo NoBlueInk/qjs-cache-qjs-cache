@@ -11,4 +11,6 @@ plugins {
 }
 
 group = "com.example"
-version
+version = "0.0.1"
+application {
+    mainClass.set("io.ktor.server.netty.EngineMain")
