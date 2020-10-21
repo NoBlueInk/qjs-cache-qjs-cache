@@ -20,4 +20,9 @@ application {
 }
 
 repositories {
-    maven
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
+    i
