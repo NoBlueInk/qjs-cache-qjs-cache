@@ -25,4 +25,5 @@ repositories {
 
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
-    i
+    implementation("io.ktor:ktor-server-call-logging-jvm:$ktor_version")
+    implementatio
