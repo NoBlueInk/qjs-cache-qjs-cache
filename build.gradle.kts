@@ -26,4 +26,5 @@ repositories {
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-call-logging-jvm:$ktor_version")
-    implementatio
+    implementation("io.ktor:ktor-server-call-id-jvm:$ktor_version")
+    implementation("ch.qos.logback:logback-class
