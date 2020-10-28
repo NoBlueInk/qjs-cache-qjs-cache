@@ -33,4 +33,5 @@ dependencies {
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
 
     // JW
-    i
+    implementation("io.ktor:ktor-server-auth-jvm:$ktor_version")
+    testImplementation("io.ktor:ktor-
