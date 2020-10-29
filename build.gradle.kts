@@ -34,4 +34,7 @@ dependencies {
 
     // JW
     implementation("io.ktor:ktor-server-auth-jvm:$ktor_version")
-    testImplementation("io.ktor:ktor-
+    testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
+
+    // JWT Auth
+    implementation("io.ktor:ktor-
