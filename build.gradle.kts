@@ -37,4 +37,7 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
 
     // JWT Auth
-    implementation("io.ktor:ktor-
+    implementation("io.ktor:ktor-server-auth-jwt-jvm:$ktor_version")
+
+    // Ktorm Core   KTORM
+    implementation("org
