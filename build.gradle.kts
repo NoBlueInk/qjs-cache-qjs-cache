@@ -43,4 +43,8 @@ dependencies {
     implementation("org.ktorm:ktorm-core:3.5.0")
     implementation("org.ktorm:ktorm-support-mysql:3.5.0")
 
-  
+    // Mysql Connector
+    implementation("mysql:mysql-connector-java:8.0.30")
+
+
+    // Serial
