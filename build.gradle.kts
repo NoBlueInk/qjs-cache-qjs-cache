@@ -40,4 +40,7 @@ dependencies {
     implementation("io.ktor:ktor-server-auth-jwt-jvm:$ktor_version")
 
     // Ktorm Core   KTORM
-    implementation("org
+    implementation("org.ktorm:ktorm-core:3.5.0")
+    implementation("org.ktorm:ktorm-support-mysql:3.5.0")
+
+  
