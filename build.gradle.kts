@@ -49,4 +49,5 @@ dependencies {
 
     // Serializations
     implementation("io.ktor:ktor-serialization-jackson-jvm:$ktor_version")
-    implemen
+    implementation("io.ktor:ktor-serialization-gson-jvm:$ktor_version")
+    implementatio
