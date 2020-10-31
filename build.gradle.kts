@@ -47,4 +47,6 @@ dependencies {
     implementation("mysql:mysql-connector-java:8.0.30")
 
 
-    // Serial
+    // Serializations
+    implementation("io.ktor:ktor-serialization-jackson-jvm:$ktor_version")
+    implemen
