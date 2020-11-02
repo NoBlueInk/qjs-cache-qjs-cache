@@ -50,4 +50,7 @@ dependencies {
     // Serializations
     implementation("io.ktor:ktor-serialization-jackson-jvm:$ktor_version")
     implementation("io.ktor:ktor-serialization-gson-jvm:$ktor_version")
-    implementatio
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:$ktor_version")
+
+    // Netty
+    implementation("
