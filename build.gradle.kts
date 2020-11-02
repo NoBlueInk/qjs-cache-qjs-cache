@@ -53,4 +53,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:$ktor_version")
 
     // Netty
+    implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
+
+    // Session
     implementation("
