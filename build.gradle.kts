@@ -56,4 +56,7 @@ dependencies {
     implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
 
     // Session
-    implementation("
+    implementation("io.ktor:ktor-server-sessions-jvm:$ktor_version")
+
+    implementation("commons-codec:commons-codec:1.15")
+
