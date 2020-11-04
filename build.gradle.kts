@@ -60,3 +60,6 @@ dependencies {
 
     implementation("commons-codec:commons-codec:1.15")
 
+    // Koin for Ktor
+    implementation("io.insert-koin:koin-ktor:$koin_version")
+  
