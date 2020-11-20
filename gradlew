@@ -33,4 +33,5 @@
 #       requires all of these POSIX shell features:
 #         * functions;
 #         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
-#           «${var#prefix}», «${var%suffix}»
+#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
+#         * compound commands having a testable exit status, especially «ca
