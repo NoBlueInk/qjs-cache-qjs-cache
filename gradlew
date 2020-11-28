@@ -51,4 +51,5 @@
 #       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
 #       see the in-line comments for details.
 #
-#       There are tweaks for spec
+#       There are tweaks for specific operating systems such as AIX, CygWin,
+#       Darwin, MinGW, an
