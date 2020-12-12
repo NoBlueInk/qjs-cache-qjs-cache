@@ -98,4 +98,9 @@ warn () {
 die () {
     echo
     echo "$*"
-    e
+    echo
+    exit 1
+} >&2
+
+# OS specific support (must be 'true' or 'false').
+cygwin=
