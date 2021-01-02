@@ -170,4 +170,7 @@ if "$cygwin" || "$msys" ; then
     JAVACMD=$( cygpath --unix "$JAVACMD" )
 
     # Now convert the arguments - kludge to limit ourselves to /bin/sh
-    for
+    for arg do
+        if
+            case $arg in                                #(
+          
