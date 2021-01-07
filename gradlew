@@ -181,4 +181,5 @@ if "$cygwin" || "$msys" ; then
         then
             arg=$( cygpath --path --ignore --mixed "$arg" )
         fi
-        # Roll the args list around exactly as many t
+        # Roll the args list around exactly as many times as the number of
+        # args, so each arg winds up back in the position where it star
