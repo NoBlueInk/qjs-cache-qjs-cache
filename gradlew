@@ -179,4 +179,6 @@ if "$cygwin" || "$msys" ; then
               *)    false ;;
             esac
         then
-            arg=$( cygpath --path --
+            arg=$( cygpath --path --ignore --mixed "$arg" )
+        fi
+        # Roll the args list around exactly as many t
