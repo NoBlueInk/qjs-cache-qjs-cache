@@ -186,4 +186,6 @@ if "$cygwin" || "$msys" ; then
         # possibly modified.
         #
         # NB: a `for` loop captures its iteration list before it begins, so
-        # changing the positional parameters here affects nei
+        # changing the positional parameters here affects neither the number of
+        # iterations, nor the values presented in `arg`.
+    
