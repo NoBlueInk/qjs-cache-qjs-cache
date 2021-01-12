@@ -216,4 +216,5 @@ set -- \
 #
 # but POSIX shell has neither arrays nor command substitution, so instead we
 # post-process each arg (as a line of input to sed) to backslash-escape any
-# character that might be a shell metacharacter, then use eval t
+# character that might be a shell metacharacter, then use eval to reverse
+# that process (while maintaining the separation between arguments), and wra
