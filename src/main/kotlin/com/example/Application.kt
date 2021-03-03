@@ -19,3 +19,24 @@ fun main() {
 }
 
 @Suppress("unused") // application.conf references the main function. This annotation prevents the IDE from marking it as unused.
+fun Application.module() {
+
+    install(Koin) {
+        modules(mainModule)
+    }
+
+    val tokenConfig = TokenConfig(
+        issuer = "http://127.0.0.1:8080",
+        audience = "users",
+        expiresIn = 365L * 1000L * 60L * 60L * 24L,
+        secret = System.getenv("JWT_SECRET")
+    )
+
+    productsConfigRouting()
+    stockAppConfigurationRouting()
+    configureSecurity(tokenConfig)
+    configureSerialization()
+    configureMonitoring()
+    userConfigRouting()
+}
+
