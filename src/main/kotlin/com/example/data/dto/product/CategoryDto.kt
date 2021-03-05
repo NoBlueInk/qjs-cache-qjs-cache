@@ -4,4 +4,6 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Catego
+data class CategoryDto(
+    @SerialName("category_id") val categoryId: Int,
+    @SerialName("catego
