@@ -1,3 +1,7 @@
 package com.example.data.dto.product
 
-im
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class 
