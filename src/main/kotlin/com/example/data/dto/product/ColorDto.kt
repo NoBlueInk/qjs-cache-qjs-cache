@@ -4,4 +4,6 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class 
+data class ColorDto(
+    @SerialName("color_id") val colorId: Int,
+    @SerialName("color_name") val col
