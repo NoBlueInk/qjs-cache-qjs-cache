@@ -5,4 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ProductConditionDto(
-    @
+    @SerialName("condition_id") val conditionId: Int,
+    @SerialName("condition_
