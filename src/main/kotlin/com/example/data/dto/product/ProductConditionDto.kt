@@ -1,4 +1,8 @@
 package com.example.data.dto.product
 
 import kotlinx.serialization.SerialName
-import kot
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ProductConditionDto(
+    @
