@@ -4,4 +4,6 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Prod
+data class ProductDto(
+    @SerialName("product_id") val productId: Long,
+    @SerialName("item_na
