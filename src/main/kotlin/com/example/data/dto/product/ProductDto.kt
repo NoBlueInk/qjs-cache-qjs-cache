@@ -9,4 +9,6 @@ data class ProductDto(
     @SerialName("item_name") val itemName: String,
     @SerialName("product_code") val productCode: String,
     @SerialName("item_image") val itemImage: String,
-    @SerialName("item_pric
+    @SerialName("item_price") val itemPrice: Float,
+    @SerialName("item_createdAt") val itemCreateAt: String,
+    @SerialName("brand
