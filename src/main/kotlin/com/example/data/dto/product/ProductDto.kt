@@ -14,4 +14,5 @@ data class ProductDto(
     @SerialName("brand_id") val brandId: BrandDto,
     @SerialName("supplier_id") val supplierId: SupplierDto,
     @SerialName("category_id") val categoryId: CategoryDto,
-    @SerialName("unit_id") val unit
+    @SerialName("unit_id") val unitId: ProductUnitDto,
+)
