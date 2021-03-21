@@ -13,4 +13,5 @@ data class ProductDto(
     @SerialName("item_createdAt") val itemCreateAt: String,
     @SerialName("brand_id") val brandId: BrandDto,
     @SerialName("supplier_id") val supplierId: SupplierDto,
- 
+    @SerialName("category_id") val categoryId: CategoryDto,
+    @SerialName("unit_id") val unit
