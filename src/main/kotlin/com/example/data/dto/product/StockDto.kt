@@ -7,4 +7,5 @@ import kotlinx.serialization.Serializable
 data class StockDto(
     @SerialName("stock_id") val stockId: Long,
     @SerialName("product_id") val productId: ProductDto,
-    @SerialName("warehouse_id") 
+    @SerialName("warehouse_id") val warehouseId: WarehousesDto,
+    @SerialName("quantity_in_hand") val quantityInHand: Float,
