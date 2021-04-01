@@ -9,3 +9,5 @@ data class StockDto(
     @SerialName("product_id") val productId: ProductDto,
     @SerialName("warehouse_id") val warehouseId: WarehousesDto,
     @SerialName("quantity_in_hand") val quantityInHand: Float,
+    @SerialName("product_created") val productCreated: String,
+)
