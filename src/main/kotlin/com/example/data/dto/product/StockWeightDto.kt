@@ -8,4 +8,5 @@ import kotlinx.serialization.Serializable
 data class StockWeightDto(
     @SerialName("stock_weight_id") val stockWeightId: Int,
     @SerialName("stock_id") val stockId: StockDto,
-    @SerialName("weight") val w
+    @SerialName("weight") val weight: String,
+)
