@@ -5,4 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class SupplierDto(
-    @SerialNam
+    @SerialName("supplier_id")val supplierId: Int,
+    @SerialName("supplier_name")val supplierName: String,
