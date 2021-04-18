@@ -6,4 +6,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TransfersDto(
     @SerialName("transfer_id") val transferId: Int,
-    @SerialName("stock_condition_id") val stockConditio
+    @SerialName("stock_condition_id") val stockConditionId: ProductConditionDto,
+    @SerialName("transfer_type_id") val transferTypeId: Trans
