@@ -5,4 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TransfersTypeDto(
-    @SerialName("transfer_type_id"
+    @SerialName("transfer_type_id") val transferTypeId: Int,
+    @SerialName("transfers_name") val transfer
