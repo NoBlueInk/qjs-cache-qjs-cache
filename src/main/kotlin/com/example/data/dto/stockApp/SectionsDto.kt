@@ -5,4 +5,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class SectionsDto(
-    @Seria
+    @SerialName("sections_id") val sectionsID: Int,
+    @SerialName("section_name") val
