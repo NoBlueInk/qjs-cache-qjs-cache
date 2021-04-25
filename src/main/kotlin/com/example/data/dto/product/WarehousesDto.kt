@@ -6,4 +6,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class WarehousesDto(
     @SerialName("warehouse_id") val warehouseId: Int,
-    @SerialName("warehouse_name") val warehouseName:
+    @SerialName("warehouse_name") val warehouseName: String,
+    @SerialName("site_name") val siteName: String
+)
