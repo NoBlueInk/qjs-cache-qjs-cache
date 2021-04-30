@@ -7,4 +7,5 @@ import kotlinx.serialization.Serializable
 data class PermissionDto(
     @SerialName("permission_id") val permissionId: Int,
     @SerialName("permission_name") val permissionName: String,
-    @S
+    @SerialName("permission_description") val permissionDescription: String,
+)
