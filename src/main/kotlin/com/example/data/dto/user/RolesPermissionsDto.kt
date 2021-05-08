@@ -6,4 +6,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class RolesPermissionsDto(
     @SerialName("role") val role: RoleDto,
-    @SerialName("permission") val permission: P
+    @SerialName("permission") val permission: PermissionDto,
+)
