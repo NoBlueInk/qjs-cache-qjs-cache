@@ -11,4 +11,5 @@ data class UserDto(
     @SerialName("user_password") val userPassword: String,
     @SerialName("user_age") val userAge: Int,
     @SerialName("user_phone") val userPhone: String,
-    @Seria
+    @SerialName("user_address") val userAddress: String,
+    @SerialName("user_salt") 
