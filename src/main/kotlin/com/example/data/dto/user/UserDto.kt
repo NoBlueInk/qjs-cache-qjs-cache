@@ -1,4 +1,8 @@
 package com.example.data.dto.user
 
 import kotlinx.serialization.SerialName
-import kotl
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class UserDto(
+    @SerialName("user
