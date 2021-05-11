@@ -5,4 +5,6 @@ import org.ktorm.entity.Entity
 interface RolesPermissionsEntity : Entity<RolesPermissionsEntity> {
     companion object : Entity.Factory<RolesPermissionsEntity>()
 
-    val role: RoleEnt
+    val role: RoleEntity
+    val permission: PermissionEntity
+}
