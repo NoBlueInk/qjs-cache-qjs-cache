@@ -9,4 +9,8 @@ interface UserEntity : Entity<UserEntity> {
     var userId: Int
     var userRole: Int
     var username: String
-    var user
+    var userPassword: String
+    var userAge: Int
+    var userPhone: String
+    var userAddress: String
+    va
