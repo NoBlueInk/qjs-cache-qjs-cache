@@ -13,4 +13,9 @@ interface UserEntity : Entity<UserEntity> {
     var userAge: Int
     var userPhone: String
     var userAddress: String
-    va
+    var userSalt: String
+//    var userRegister: LocalDateTime?
+}
+
+
+
