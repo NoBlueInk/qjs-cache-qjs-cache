@@ -8,4 +8,6 @@ interface BrandEntity : Entity<BrandEntity> {
     companion object : Entity.Factory<BrandEntity>()
 
     val brandId: Int
-    val brandName: Stri
+    val brandName: String
+    val brandCreateAt: LocalDateTime?
+}
