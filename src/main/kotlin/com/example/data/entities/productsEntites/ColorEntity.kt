@@ -3,4 +3,6 @@ package com.example.data.entities.productsEntites
 import org.ktorm.entity.Entity
 
 interface ColorEntity : Entity<ColorEntity> {
-    co
+    companion object : Entity.Factory<ColorEntity>()
+
+    val colorId: Int
