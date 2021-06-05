@@ -6,3 +6,6 @@ interface ColorEntity : Entity<ColorEntity> {
     companion object : Entity.Factory<ColorEntity>()
 
     val colorId: Int
+    val colorName: String
+    val colorHex: String
+}
