@@ -6,4 +6,5 @@ import java.time.Instant
 import java.time.LocalDateTime
 import java.util.Date
 
-interface Pro
+interface ProductEntity : Entity<ProductEntity> {
+    companion object : Entity.Factory<ProductEntity>()
