@@ -8,3 +8,8 @@ import java.util.Date
 
 interface ProductEntity : Entity<ProductEntity> {
     companion object : Entity.Factory<ProductEntity>()
+
+    val productId: Long
+    val itemName: String
+    val productCode: String
+    val itemIm
