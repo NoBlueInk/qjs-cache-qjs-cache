@@ -12,4 +12,7 @@ interface ProductEntity : Entity<ProductEntity> {
     val productId: Long
     val itemName: String
     val productCode: String
-    val itemIm
+    val itemImage: String
+    val itemPrice: Float
+    val itemCreateAt: LocalDateTime?
+    val brandId: BrandEnt
