@@ -15,4 +15,6 @@ interface ProductEntity : Entity<ProductEntity> {
     val itemImage: String
     val itemPrice: Float
     val itemCreateAt: LocalDateTime?
-    val brandId: BrandEnt
+    val brandId: BrandEntity
+    val supplierId: SupplierEntity
+    val categoryId: CategoryEnti
