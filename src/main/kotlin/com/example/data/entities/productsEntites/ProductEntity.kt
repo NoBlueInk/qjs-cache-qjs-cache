@@ -17,4 +17,6 @@ interface ProductEntity : Entity<ProductEntity> {
     val itemCreateAt: LocalDateTime?
     val brandId: BrandEntity
     val supplierId: SupplierEntity
-    val categoryId: CategoryEnti
+    val categoryId: CategoryEntity
+    val unitId: ProductUnitEntity
+}
