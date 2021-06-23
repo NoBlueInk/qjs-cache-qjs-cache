@@ -10,3 +10,6 @@ interface SupplierEntity : Entity<SupplierEntity> {
     companion object : Entity.Factory<SupplierEntity>()
 
     val supplierId: Int
+    val supplierName: String
+    val supplierCreateAt: LocalDateTime?
+}
