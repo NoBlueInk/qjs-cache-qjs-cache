@@ -5,4 +5,8 @@ import java.time.Instant
 import java.time.LocalDateTime
 
 interface TransfersTypeEntity : Entity<TransfersTypeEntity> {
-    companion object : Entity.Fact
+    companion object : Entity.Factory<TransfersTypeEntity>()
+
+    val transferTypeId: Int
+    val transfersName: String
+    va
