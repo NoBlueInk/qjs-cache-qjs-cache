@@ -9,4 +9,5 @@ interface TransfersTypeEntity : Entity<TransfersTypeEntity> {
 
     val transferTypeId: Int
     val transfersName: String
-    va
+    val transfersCreated: LocalDateTime?
+}
