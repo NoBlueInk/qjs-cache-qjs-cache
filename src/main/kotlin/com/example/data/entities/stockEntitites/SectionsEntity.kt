@@ -4,4 +4,7 @@ import org.ktorm.entity.Entity
 
 interface SectionsEntity: Entity<SectionsEntity> {
     companion object: Entity.Factory<SectionsEntity>()
-    val sectionsID: 
+    val sectionsID: Int
+    val sectionName: String
+    val sectionColor: String
+    val sectionIconsPath: Stri
