@@ -7,4 +7,5 @@ interface SectionsEntity: Entity<SectionsEntity> {
     val sectionsID: Int
     val sectionName: String
     val sectionColor: String
-    val sectionIconsPath: Stri
+    val sectionIconsPath: String
+}
