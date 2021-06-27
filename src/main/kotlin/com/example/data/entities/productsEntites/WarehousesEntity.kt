@@ -6,4 +6,6 @@ interface WarehousesEntity : Entity<WarehousesEntity> {
     companion object : Entity.Factory<WarehousesEntity>()
 
     val warehouseId: Int
-    
+    val warehouseName: String
+    val siteName: String
+}
