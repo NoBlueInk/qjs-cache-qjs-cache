@@ -4,4 +4,6 @@ import com.example.data.dto.user.RoleDto
 import com.example.data.entities.authEntites.RoleEntity
 
 fun RoleDto.toRoleEntity() =
-    RoleEntity 
+    RoleEntity {
+        rolesId = this@toRoleEntity.rolesId
+        rolesName = this@toRoleEntity.rolesNa
