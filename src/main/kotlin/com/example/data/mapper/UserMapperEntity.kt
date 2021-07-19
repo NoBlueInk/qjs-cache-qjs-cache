@@ -7,4 +7,6 @@ import com.example.utils.stringToLocalDateTime
 fun UserDto.toUserEntity() =
     UserEntity {
         userId = this@toUserEntity.userId
-        userRole = thi
+        userRole = this@toUserEntity.userRole
+        username = this@toUserEntity.username
+        us
