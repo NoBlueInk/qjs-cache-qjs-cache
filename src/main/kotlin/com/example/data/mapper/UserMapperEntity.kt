@@ -4,4 +4,7 @@ import com.example.data.dto.user.UserDto
 import com.example.data.entities.authEntites.UserEntity
 import com.example.utils.stringToLocalDateTime
 
-fun UserDto.toUserE
+fun UserDto.toUserEntity() =
+    UserEntity {
+        userId = this@toUserEntity.userId
+        userRole = thi
