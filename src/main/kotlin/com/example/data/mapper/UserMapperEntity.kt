@@ -12,4 +12,6 @@ fun UserDto.toUserEntity() =
         userPassword = this@toUserEntity.userPassword
         userAge = this@toUserEntity.userAge
         userPhone = this@toUserEntity.userPhone
-        userAddress = this@toUserEntity.
+        userAddress = this@toUserEntity.userAddress
+        userSalt = this@toUserEntity.userSalt
+//        userRegister = this@toUserEntity
