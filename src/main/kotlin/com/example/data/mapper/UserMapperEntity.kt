@@ -9,4 +9,5 @@ fun UserDto.toUserEntity() =
         userId = this@toUserEntity.userId
         userRole = this@toUserEntity.userRole
         username = this@toUserEntity.username
-        us
+        userPassword = this@toUserEntity.userPassword
+        userAge = this@toUserEntity
