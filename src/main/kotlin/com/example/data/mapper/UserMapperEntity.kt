@@ -14,4 +14,5 @@ fun UserDto.toUserEntity() =
         userPhone = this@toUserEntity.userPhone
         userAddress = this@toUserEntity.userAddress
         userSalt = this@toUserEntity.userSalt
-//        userRegister = this@toUserEntity
+//        userRegister = this@toUserEntity.userRegister.stringToLocalDateTime()
+    }
