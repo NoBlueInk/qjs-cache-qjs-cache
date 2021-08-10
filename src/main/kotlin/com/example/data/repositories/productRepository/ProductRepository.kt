@@ -7,4 +7,6 @@ interface ProductRepository {
 
     suspend fun getAllProductsFromStocks(): List<StockDto>
 
-    suspen
+    suspend fun getAllProducts(): List<ProductDto>
+
+    suspend fun getAllColors(): Li
