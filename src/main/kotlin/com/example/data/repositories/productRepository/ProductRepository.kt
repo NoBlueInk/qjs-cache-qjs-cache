@@ -9,4 +9,8 @@ interface ProductRepository {
 
     suspend fun getAllProducts(): List<ProductDto>
 
-    suspend fun getAllColors(): Li
+    suspend fun getAllColors(): List<ColorDto>
+
+    suspend fun getAllCategory(): List<CategoryDto>
+
+    s
