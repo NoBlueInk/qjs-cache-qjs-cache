@@ -13,4 +13,6 @@ interface ProductRepository {
 
     suspend fun getAllCategory(): List<CategoryDto>
 
-    s
+    suspend fun getAllSupplier(): List<SupplierDto>
+
+    suspend fun getAllBrands():
