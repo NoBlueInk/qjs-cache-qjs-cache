@@ -21,4 +21,6 @@ interface ProductRepository {
 
     suspend fun getAllWarehouses(): List<WarehousesDto>
 
-    suspend fun getAllTransfer
+    suspend fun getAllTransfersType(): List<TransfersTypeDto>
+
+    suspend fun getAllProductTransfersMovement():List<ProductTransfer
