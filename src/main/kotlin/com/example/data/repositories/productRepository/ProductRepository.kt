@@ -23,4 +23,8 @@ interface ProductRepository {
 
     suspend fun getAllTransfersType(): List<TransfersTypeDto>
 
-    suspend fun getAllProductTransfersMovement():List<ProductTransfer
+    suspend fun getAllProductTransfersMovement():List<ProductTransfersMovementDto>
+
+    suspend fun getAllStockWeight():List<StockWeightDto>
+
+    s
