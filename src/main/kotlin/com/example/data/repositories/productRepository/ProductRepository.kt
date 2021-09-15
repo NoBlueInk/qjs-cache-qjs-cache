@@ -18,3 +18,7 @@ interface ProductRepository {
     suspend fun getAllBrands():List<BrandDto>
 
     suspend fun getAllTransfers(): List<TransfersDto>
+
+    suspend fun getAllWarehouses(): List<WarehousesDto>
+
+    suspend fun getAllTransfer
