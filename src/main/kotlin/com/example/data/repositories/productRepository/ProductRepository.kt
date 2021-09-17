@@ -27,4 +27,6 @@ interface ProductRepository {
 
     suspend fun getAllStockWeight():List<StockWeightDto>
 
-    s
+    suspend fun getAllProductUnits(): List<ProductUnitDto>
+
+    suspend fun getAllStockColors():List<
