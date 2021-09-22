@@ -29,4 +29,7 @@ interface ProductRepository {
 
     suspend fun getAllProductUnits(): List<ProductUnitDto>
 
-    suspend fun getAllStockColors():List<
+    suspend fun getAllStockColors():List<StockColorDto>
+
+    suspend fun getAllProductCondition():List<ProductConditionDto>
+
