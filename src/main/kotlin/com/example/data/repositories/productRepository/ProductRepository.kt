@@ -33,3 +33,6 @@ interface ProductRepository {
 
     suspend fun getAllProductCondition():List<ProductConditionDto>
 
+    suspend fun getCustom():List<ProductDto>
+
+}
