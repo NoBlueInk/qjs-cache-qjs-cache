@@ -6,4 +6,6 @@ interface UserRepository {
 
 //    suspend fun getUserByUserName(username: String): UserDto?
 //
-//    suspend fun getListOfRolesNa
+//    suspend fun getListOfRolesName(): List<RoleDto>
+//
+//    suspend fun checkIfRoleExistByRoleId(roleId :Int): Bo
