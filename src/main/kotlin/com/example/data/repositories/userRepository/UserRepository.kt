@@ -10,4 +10,6 @@ interface UserRepository {
 //
 //    suspend fun checkIfRoleExistByRoleId(roleId :Int): Boolean
 //
-//    suspend fun getWhatIsTheUserPermissionsByUserRole(userR
+//    suspend fun getWhatIsTheUserPermissionsByUserRole(userRole:String):List<PermissionDto>
+
+    suspend fun checkIfUserExistByName(user
