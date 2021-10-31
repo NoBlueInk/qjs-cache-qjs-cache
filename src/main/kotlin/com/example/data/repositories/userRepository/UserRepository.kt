@@ -8,4 +8,6 @@ interface UserRepository {
 //
 //    suspend fun getListOfRolesName(): List<RoleDto>
 //
-//    suspend fun checkIfRoleExistByRoleId(roleId :Int): Bo
+//    suspend fun checkIfRoleExistByRoleId(roleId :Int): Boolean
+//
+//    suspend fun getWhatIsTheUserPermissionsByUserRole(userR
