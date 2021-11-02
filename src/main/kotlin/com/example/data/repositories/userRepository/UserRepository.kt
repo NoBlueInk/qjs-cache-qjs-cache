@@ -16,4 +16,6 @@ interface UserRepository {
 
     suspend fun insertUser(user: UserDto): Boolean
 
-//    suspend 
+//    suspend fun updateUserPassword(user: UserDto): Boolean
+
+    suspend fun deleteUser(username: Stri
