@@ -12,4 +12,8 @@ interface UserRepository {
 //
 //    suspend fun getWhatIsTheUserPermissionsByUserRole(userRole:String):List<PermissionDto>
 
-    suspend fun checkIfUserExistByName(user
+    suspend fun checkIfUserExistByName(username: String): Boolean
+
+    suspend fun insertUser(user: UserDto): Boolean
+
+//    suspend 
