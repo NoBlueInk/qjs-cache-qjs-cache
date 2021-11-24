@@ -5,3 +5,7 @@ import com.example.data.source.dao.userDao.UserDao
 
 
 class UserRepositoryImpl constructor(
+    private var userDao: UserDao,
+) : UserRepository {
+
+    override suspend fun getUserByUse
