@@ -8,4 +8,5 @@ class UserRepositoryImpl constructor(
     private var userDao: UserDao,
 ) : UserRepository {
 
-    override suspend fun getUserByUse
+    override suspend fun getUserByUserName(username: String): UserDto? {
+        return userDao.getUserByUserName(userName =
