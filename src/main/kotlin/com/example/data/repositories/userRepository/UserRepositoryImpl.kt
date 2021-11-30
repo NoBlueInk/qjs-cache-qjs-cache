@@ -12,4 +12,6 @@ class UserRepositoryImpl constructor(
         return userDao.getUserByUserName(userName = username)
     }
 //
-//    override suspend fun getListOfRolesName(): List<RoleDt
+//    override suspend fun getListOfRolesName(): List<RoleDto> {
+//        return dataBase.from(RolesTable).select()
+//            .map
