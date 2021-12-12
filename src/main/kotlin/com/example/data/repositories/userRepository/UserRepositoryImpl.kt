@@ -14,4 +14,6 @@ class UserRepositoryImpl constructor(
 //
 //    override suspend fun getListOfRolesName(): List<RoleDto> {
 //        return dataBase.from(RolesTable).select()
-//            .map
+//            .map { row ->
+//                RoleDto(
+//                    RolesId = row[RolesTable.RolesId]!!
