@@ -23,4 +23,6 @@ class UserRepositoryImpl constructor(
 //            }
 //    }
 //
-//    override suspend fun checkIfRoleExistByRoleId(roleId: I
+//    override suspend fun checkIfRoleExistByRoleId(roleId: Int): Boolean {
+//        return dataBase.from(RolesTable).select()
+//            .wher
