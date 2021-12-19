@@ -18,4 +18,6 @@ class UserRepositoryImpl constructor(
 //                RoleDto(
 //                    RolesId = row[RolesTable.RolesId]!!,
 //                    RolesName = row[RolesTable.RolesName]!!,
-//                    Rol
+//                    RolesDescription = row[RolesTable.RolesDescription]!!,
+//                )
+//    
