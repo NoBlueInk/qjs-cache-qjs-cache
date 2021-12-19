@@ -16,4 +16,6 @@ class UserRepositoryImpl constructor(
 //        return dataBase.from(RolesTable).select()
 //            .map { row ->
 //                RoleDto(
-//                    RolesId = row[RolesTable.RolesId]!!
+//                    RolesId = row[RolesTable.RolesId]!!,
+//                    RolesName = row[RolesTable.RolesName]!!,
+//                    Rol
