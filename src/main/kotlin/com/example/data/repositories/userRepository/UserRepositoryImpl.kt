@@ -20,4 +20,7 @@ class UserRepositoryImpl constructor(
 //                    RolesName = row[RolesTable.RolesName]!!,
 //                    RolesDescription = row[RolesTable.RolesDescription]!!,
 //                )
-//    
+//            }
+//    }
+//
+//    override suspend fun checkIfRoleExistByRoleId(roleId: I
