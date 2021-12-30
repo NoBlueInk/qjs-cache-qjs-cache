@@ -29,4 +29,4 @@ class UserRepositoryImpl constructor(
 //            .map { }.isNotEmpty()
 //    }
 //
-//    
+//    override suspend fun getWhatIsTheUserPermissionsByUserRole(userRole: Str
