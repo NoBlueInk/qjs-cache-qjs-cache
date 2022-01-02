@@ -29,4 +29,8 @@ class UserRepositoryImpl constructor(
 //            .map { }.isNotEmpty()
 //    }
 //
-//    override suspend fun getWhatIsTheUserPermissionsByUserRole(userRole: Str
+//    override suspend fun getWhatIsTheUserPermissionsByUserRole(userRole: String): List<PermissionDto> {
+//        TODO("Not yet implemented")
+//    }
+
+    o
