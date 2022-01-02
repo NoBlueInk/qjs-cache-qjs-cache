@@ -33,4 +33,5 @@ class UserRepositoryImpl constructor(
 //        TODO("Not yet implemented")
 //    }
 
-    o
+    override suspend fun checkIfUserExistByName(username: String): Boolean {
+        
