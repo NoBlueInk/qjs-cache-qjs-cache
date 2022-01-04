@@ -34,4 +34,7 @@ class UserRepositoryImpl constructor(
 //    }
 
     override suspend fun checkIfUserExistByName(username: String): Boolean {
-        
+        return userDao.checkIfUserExistByName(username)
+    }
+
+    override suspend f
