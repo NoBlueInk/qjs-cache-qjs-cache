@@ -37,4 +37,6 @@ class UserRepositoryImpl constructor(
         return userDao.checkIfUserExistByName(username)
     }
 
-    override suspend f
+    override suspend fun insertUser(user: UserDto): Boolean {
+        return userDao.insertUser(user = user)
+    }
