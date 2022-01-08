@@ -42,4 +42,5 @@ class UserRepositoryImpl constructor(
     }
 
 //    override suspend fun updateUserPassword(user: UserDto): Boolean {
-//        v
+//        val updateUserPassword = dataBase.update(UserTable) { row ->
+//            set(row
