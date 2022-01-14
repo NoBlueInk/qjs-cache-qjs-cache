@@ -49,3 +49,6 @@ class UserRepositoryImpl constructor(
 //        }
 //        return updateUserPassword == 1
 //    }
+
+    override suspend fun deleteUser(username: String): Boolean {
+//        val del
