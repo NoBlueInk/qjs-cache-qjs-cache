@@ -53,3 +53,6 @@ class UserRepositoryImpl constructor(
     override suspend fun deleteUser(username: String): Boolean {
 //        val deleteUser = dataBase.delete(UserTable) { row ->
 //            row.userName eq username
+//        }
+//        return deleteUser == 1
+        TODO("Not yet implemented
