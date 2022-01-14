@@ -45,4 +45,7 @@ class UserRepositoryImpl constructor(
 //        val updateUserPassword = dataBase.update(UserTable) { row ->
 //            set(row.userPassword, user.userPassword)
 //            set(row.userSalt, user.userSalt)
-//            where { ro
+//            where { row.userId eq user.userId }
+//        }
+//        return updateUserPassword == 1
+//    }
