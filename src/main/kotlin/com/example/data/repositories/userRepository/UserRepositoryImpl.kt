@@ -51,4 +51,5 @@ class UserRepositoryImpl constructor(
 //    }
 
     override suspend fun deleteUser(username: String): Boolean {
-//        val del
+//        val deleteUser = dataBase.delete(UserTable) { row ->
+//            row.userName eq username
