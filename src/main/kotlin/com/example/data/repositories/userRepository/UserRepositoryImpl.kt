@@ -61,4 +61,9 @@ class UserRepositoryImpl constructor(
 
 
 /* Insert User
-        val existingUser = dataBase.from(UserTable).select(UserTab
+        val existingUser = dataBase.from(UserTable).select(UserTable.userId)
+//            .where { UserTable.userName eq user.username }
+//            .map {}.size
+//
+//
+//
