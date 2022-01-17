@@ -55,4 +55,10 @@ class UserRepositoryImpl constructor(
 //            row.userName eq username
 //        }
 //        return deleteUser == 1
-        TODO("Not yet implemented
+        TODO("Not yet implemented")
+    }
+}
+
+
+/* Insert User
+        val existingUser = dataBase.from(UserTable).select(UserTab
