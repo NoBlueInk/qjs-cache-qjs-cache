@@ -67,3 +67,5 @@ class UserRepositoryImpl constructor(
 //
 //
 //
+//        return if (existingUser == 0) {
+//            val result = dataBase.insert(User
