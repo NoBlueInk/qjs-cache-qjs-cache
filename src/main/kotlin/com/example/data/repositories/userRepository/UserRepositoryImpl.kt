@@ -70,4 +70,5 @@ class UserRepositoryImpl constructor(
 //        return if (existingUser == 0) {
 //            val result = dataBase.insert(UserTable) { userTable ->
 //                set(userTable.userRole, user.userRole)
-//           
+//                set(userTable.userName, user.username)
+//                set(userTable.userPassword, user.userPasswo
