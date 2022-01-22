@@ -74,4 +74,6 @@ class UserRepositoryImpl constructor(
 //                set(userTable.userPassword, user.userPassword)
 //                set(userTable.userSalt, user.userSalt)
 //            }
-//    
+//            return result == 1
+//        } else false
+*/
