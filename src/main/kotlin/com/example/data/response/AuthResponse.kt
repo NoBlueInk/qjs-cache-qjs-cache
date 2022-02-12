@@ -1,3 +1,7 @@
 package com.example.data.response
 
-import kotlinx.serializa
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class AuthResponse(
+    val success: Boolean,
