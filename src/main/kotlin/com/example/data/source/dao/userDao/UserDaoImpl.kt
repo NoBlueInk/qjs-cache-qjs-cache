@@ -17,4 +17,7 @@ class UserDaoImpl constructor(
 ) : UserDao {
 
     override suspend fun checkIfUserExistByName(username: String): Boolean {
-        return dataBase.checkIfExistByName(UserTabl
+        return dataBase.checkIfExistByName(UserTable.userName, username)
+    }
+
+    override suspend fun getUserByUserName(userName: String): 
