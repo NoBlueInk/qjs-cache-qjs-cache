@@ -9,4 +9,7 @@ import com.example.utils.checkIfExistByName
 import org.ktorm.database.Database
 import org.ktorm.dsl.*
 import org.ktorm.entity.add
-import 
+import org.ktorm.entity.find
+import org.ktorm.entity.singleOrNull
+
+class UserDaoImpl constr
