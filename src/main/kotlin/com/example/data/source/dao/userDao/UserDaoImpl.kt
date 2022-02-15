@@ -12,4 +12,8 @@ import org.ktorm.entity.add
 import org.ktorm.entity.find
 import org.ktorm.entity.singleOrNull
 
-class UserDaoImpl constr
+class UserDaoImpl constructor(
+    private var dataBase: Database,
+) : UserDao {
+
+    override suspend fun checkIfUserExistBy
