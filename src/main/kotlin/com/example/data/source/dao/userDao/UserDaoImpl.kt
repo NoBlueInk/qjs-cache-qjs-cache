@@ -21,4 +21,8 @@ class UserDaoImpl constructor(
     }
 
     override suspend fun getUserByUserName(userName: String): UserDto? {
-        return dataBase.user.find { UserTable.userName eq userNa
+        return dataBase.user.find { UserTable.userName eq userName }?.toUserDto()
+    }
+
+    // ? this not here
+    override suspend fun insertUser(u
