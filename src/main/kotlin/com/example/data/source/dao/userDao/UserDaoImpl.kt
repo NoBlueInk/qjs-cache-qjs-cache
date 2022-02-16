@@ -20,4 +20,5 @@ class UserDaoImpl constructor(
         return dataBase.checkIfExistByName(UserTable.userName, username)
     }
 
-    override suspend fun getUserByUserName(userName: String): 
+    override suspend fun getUserByUserName(userName: String): UserDto? {
+        return dataBase.user.find { UserTable.userName eq userNa
