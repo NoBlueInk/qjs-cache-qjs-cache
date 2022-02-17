@@ -26,4 +26,8 @@ class UserDaoImpl constructor(
 
     // ? this not here
     override suspend fun insertUser(user: UserDto): Boolean {
-        return dataBase.user.add(user.toUserEntity()) =
+        return dataBase.user.add(user.toUserEntity()) == 1
+    }
+
+    override suspend fun updateUserPassword(user: UserDto): Boolean {
+        TOD
