@@ -30,4 +30,7 @@ class UserDaoImpl constructor(
     }
 
     override suspend fun updateUserPassword(user: UserDto): Boolean {
-        TOD
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun deleteUser(username: String):
