@@ -40,4 +40,5 @@ class UserDaoImpl constructor(
 
 }//    override suspend fun getUserByUserName(username: String): UserDto {
 //        return dataBase.from(UserTable).select()
-//            .where { U
+//            .where { UserTable.userName eq username }.map { row ->
+//                UserDto(
