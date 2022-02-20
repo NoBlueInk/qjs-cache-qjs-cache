@@ -42,3 +42,5 @@ class UserDaoImpl constructor(
 //        return dataBase.from(UserTable).select()
 //            .where { UserTable.userName eq username }.map { row ->
 //                UserDto(
+//                    userId = row[UserTable.userId]!!,
+//                    userRole = ro
