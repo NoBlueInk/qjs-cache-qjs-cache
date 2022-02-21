@@ -48,4 +48,5 @@ class UserDaoImpl constructor(
 //                    userPassword = row[UserTable.userPassword]!!,
 //                    userSalt = row[UserTable.userSalt]!!
 //                )
-//       
+//            }.single()
+//    }
