@@ -7,4 +7,5 @@ import org.ktorm.schema.varchar
 
 object PermissionsTable : Table<PermissionEntity>("permissions") {
     val permissionId = int("permission_id").bindTo { it.permissionId }.primaryKey()
-    val permissionName = varchar("permissio
+    val permissionName = varchar("permission_name").bindTo { it.permissionName }
+    val permissionDescription = varchar("permission_
