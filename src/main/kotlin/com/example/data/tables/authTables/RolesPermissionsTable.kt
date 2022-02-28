@@ -6,4 +6,5 @@ import org.ktorm.schema.int
 
 object RolesPermissionsTable : Table<RolesPermissionsEntity>("rolespermissions") {
     val role = int("role").references(RolesTable) { it.role }
-    val permission =
+    val permission = int("permission").references(PermissionsTable) { it.permission }
+}
