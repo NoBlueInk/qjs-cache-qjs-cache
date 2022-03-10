@@ -11,4 +11,5 @@ import org.ktorm.schema.varchar
 object UserTable : Table<UserEntity>("users") {
     val userId = int("user_id").bindTo { it.userId }.primaryKey()
     val userRole = int("user_role").bindTo { it.userRole }
-    val userName = varc
+    val userName = varchar("user_name").bindTo { it.username }
+    val userPassword = varchar("user_password")
