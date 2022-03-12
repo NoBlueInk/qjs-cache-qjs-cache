@@ -16,4 +16,5 @@ object UserTable : Table<UserEntity>("users") {
     val userAge = int("user_age").bindTo { it.userAge }
     val userPhone = varchar("user_phone").bindTo { it.userPhone }
     val userAddress = varchar("user_address").bindTo { it.userAddress }
-    val u
+    val userSalt = varchar("user_salt").bindTo { it.userSalt }
+//    val userRegister = 
