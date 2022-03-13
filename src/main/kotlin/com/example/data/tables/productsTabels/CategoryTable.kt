@@ -1,1 +1,4 @@
-package com.example.data.tables.pr
+package com.example.data.tables.productsTabels
+
+import com.example.data.entities.productsEntites.CategoryEntity
+imp
