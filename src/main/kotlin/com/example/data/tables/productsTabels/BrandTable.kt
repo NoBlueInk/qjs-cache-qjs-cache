@@ -5,4 +5,5 @@ import org.ktorm.schema.*
 
 object BrandTable : Table<BrandEntity>("brand") {
     val brandId = int("brand_id").bindTo { it.brandId }.primaryKey()
-    val brandNam
+    val brandName = varchar("brand_name").bindTo { it.brandName }
+    val brandCreateAt = datet
