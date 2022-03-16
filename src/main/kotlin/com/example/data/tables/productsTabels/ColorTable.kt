@@ -6,4 +6,5 @@ import org.ktorm.schema.int
 import org.ktorm.schema.varchar
 
 object ColorTable: Table<ColorEntity>("color") {
-    val colorId = int("color_id").bindTo { it.colorId
+    val colorId = int("color_id").bindTo { it.colorId }.primaryKey()
+    val colorName =varchar("color_name").bindTo { it.colorName 
