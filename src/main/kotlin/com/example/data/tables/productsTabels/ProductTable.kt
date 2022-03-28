@@ -9,4 +9,5 @@ object ProductTable : Table<ProductEntity>("product") {
     val itemName = varchar("item_name").bindTo { it.itemName }
     val productCode = varchar("product_code").bindTo { it.productCode }
     val itemImage = varchar("item_image").bindTo { it.itemImage }
-    val ite
+    val itemPrice = float("item_price").bindTo { it.itemPrice }
+    val itemCreateAt = datetime("item_createdAt")
