@@ -12,4 +12,5 @@ object ProductTable : Table<ProductEntity>("product") {
     val itemPrice = float("item_price").bindTo { it.itemPrice }
     val itemCreateAt = datetime("item_createdAt").bindTo { it.itemCreateAt }
     val brandId = int("brand_id").references(BrandTable){it.brandId}
-    val supplierId = int("supplier_id").references(SupplierTabl
+    val supplierId = int("supplier_id").references(SupplierTable) { it.supplierId }
+    val categoryId = int("category_id").references(CategoryTab
