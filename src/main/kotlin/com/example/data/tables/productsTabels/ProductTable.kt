@@ -11,4 +11,5 @@ object ProductTable : Table<ProductEntity>("product") {
     val itemImage = varchar("item_image").bindTo { it.itemImage }
     val itemPrice = float("item_price").bindTo { it.itemPrice }
     val itemCreateAt = datetime("item_createdAt").bindTo { it.itemCreateAt }
-    val brandId = int("brand_id").references(BrandTable){i
+    val brandId = int("brand_id").references(BrandTable){it.brandId}
+    val supplierId = int("supplier_id").references(SupplierTabl
