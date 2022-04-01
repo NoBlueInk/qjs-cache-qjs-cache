@@ -14,4 +14,5 @@ object ProductTable : Table<ProductEntity>("product") {
     val brandId = int("brand_id").references(BrandTable){it.brandId}
     val supplierId = int("supplier_id").references(SupplierTable) { it.supplierId }
     val categoryId = int("category_id").references(CategoryTable) { it.categoryId }
-    val unitId = int("unit_id").references(ProductUnitTable) 
+    val unitId = int("unit_id").references(ProductUnitTable) { it.unitId }
+}
