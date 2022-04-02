@@ -1,3 +1,4 @@
 package com.example.data.tables.productsTabels
 
-imp
+import com.example.data.entities.productsEntites.StockColorEntity
+import com.example.data.tables.authTables
