@@ -7,4 +7,5 @@ import org.ktorm.schema.float
 import org.ktorm.schema.int
 import org.ktorm.schema.long
 
-object StockColorTab
+object StockColorTable :Table<StockColorEntity>("stockcolor") {
+    val colorId = int("color_id")
