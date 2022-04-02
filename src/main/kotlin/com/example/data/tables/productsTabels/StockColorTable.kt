@@ -4,4 +4,7 @@ import com.example.data.entities.productsEntites.StockColorEntity
 import com.example.data.tables.authTables.PermissionsTable.references
 import org.ktorm.schema.Table
 import org.ktorm.schema.float
-i
+import org.ktorm.schema.int
+import org.ktorm.schema.long
+
+object StockColorTab
