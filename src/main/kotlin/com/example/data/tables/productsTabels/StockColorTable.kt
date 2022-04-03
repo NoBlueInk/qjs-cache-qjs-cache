@@ -8,4 +8,5 @@ import org.ktorm.schema.int
 import org.ktorm.schema.long
 
 object StockColorTable :Table<StockColorEntity>("stockcolor") {
-    val colorId = int("color_id")
+    val colorId = int("color_id").bindTo { it.colorId }.primaryKey()
+    val stockId = long("stock_id").references(StockTable){it.stockI
