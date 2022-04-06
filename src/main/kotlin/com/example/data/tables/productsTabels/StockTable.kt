@@ -6,4 +6,5 @@ import org.ktorm.schema.*
 
 object StockTable : Table<StockEntity>("stock") {
     val stockId = long("stock_id").bindTo { it.stockId }.primaryKey()
-    val produc
+    val productId = long("product_id").references(ProductTable){it.productId}.primaryKey()
+    val warehouse
