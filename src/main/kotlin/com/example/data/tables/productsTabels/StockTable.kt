@@ -8,4 +8,5 @@ object StockTable : Table<StockEntity>("stock") {
     val stockId = long("stock_id").bindTo { it.stockId }.primaryKey()
     val productId = long("product_id").references(ProductTable){it.productId}.primaryKey()
     val warehouseId = int("warehouse_id").references(WarehousesTable) { it.warehouseId }.primaryKey()
-    val quantityInHand = float("quantity_in_hand").bindTo { it.qua
+    val quantityInHand = float("quantity_in_hand").bindTo { it.quantityInHand }
+    val productCreated = datetime("product_created").bindTo { i
