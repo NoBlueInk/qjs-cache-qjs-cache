@@ -1,3 +1,4 @@
 package com.example.data.tables.productsTabels
 
-import c
+import com.example.data.entities.productsEntites.SupplierEntity
+import org.ktorm.schema.*
