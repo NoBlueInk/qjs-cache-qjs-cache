@@ -5,4 +5,4 @@ import org.ktorm.schema.*
 
 object TransfersTable : Table<TransfersEntity>("transfers"){
     val transferId = int("transfer_id").bindTo { it.transferId }.primaryKey()
-    val stockCondi
+    val stockConditionId = int("stock_condition_id").references(ProductConditionTable){it
