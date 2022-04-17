@@ -5,4 +5,5 @@ import org.ktorm.schema.*
 
 object SupplierTable: Table<SupplierEntity>("supplier") {
     val supplierId = int("supplier_id").bindTo { it.supplierId }.primaryKey()
-    val supplierName = varc
+    val supplierName = varchar("supplier_name").bindTo { it.supplierName }
+    val supplierCreateAt 
