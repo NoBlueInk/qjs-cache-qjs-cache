@@ -7,4 +7,5 @@ object TransfersTable : Table<TransfersEntity>("transfers"){
     val transferId = int("transfer_id").bindTo { it.transferId }.primaryKey()
     val stockConditionId = int("stock_condition_id").references(ProductConditionTable){it.stockConditionId}
     val transferTypeId = int("transfer_type_id").references(TransfersTypeTable){it.transferTypeId}
-    val quantity = float("quantity").bindTo { it.q
+    val quantity = float("quantity").bindTo { it.quantity }
+    val transferMovementCreated = datetime("transfer_movement_created").bi
