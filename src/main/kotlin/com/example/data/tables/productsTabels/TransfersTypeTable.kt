@@ -6,4 +6,5 @@ import org.ktorm.schema.*
 
 object TransfersTypeTable: Table<TransfersTypeEntity>("transfer_types") {
     val transferTypeId = int("transfer_type_id").bindTo { it.transferTypeId }.primaryKey()
-    val transfersName = varchar("transfer
+    val transfersName = varchar("transfers_name").bindTo { it.transfersName }
+    val transfersCreated = datetime("transfers_created").bin
