@@ -4,4 +4,5 @@ import com.example.data.entities.productsEntites.TransfersTypeEntity
 import com.example.data.tables.productsTabels.WarehousesTable.bindTo
 import org.ktorm.schema.*
 
-object TransfersTypeTable:
+object TransfersTypeTable: Table<TransfersTypeEntity>("transfer_types") {
+    val transferTypeId = int("transfe
