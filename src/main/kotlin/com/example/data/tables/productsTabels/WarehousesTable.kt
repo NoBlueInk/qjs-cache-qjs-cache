@@ -7,4 +7,5 @@ import org.ktorm.schema.varchar
 
 object WarehousesTable: Table<WarehousesEntity>("warehouses") {
     val warehouseId = int("warehouse_id").bindTo { it.warehouseId }.primaryKey()
-    val warehouseName = varchar
+    val warehouseName = varchar("warehouse_name").bindTo { it.warehouseName }
+    val siteName = varchar("site_name").bindTo 
