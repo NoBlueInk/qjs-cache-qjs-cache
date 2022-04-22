@@ -5,4 +5,5 @@ import org.ktorm.schema.Table
 import org.ktorm.schema.int
 import org.ktorm.schema.varchar
 
-object WarehousesTa
+object WarehousesTable: Table<WarehousesEntity>("warehouses") {
+    val warehouseId = int("wareho
