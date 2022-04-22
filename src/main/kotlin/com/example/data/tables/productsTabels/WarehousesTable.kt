@@ -1,3 +1,5 @@
 package com.example.data.tables.productsTabels
 
-import com.example.da
+import com.example.data.entities.productsEntites.WarehousesEntity
+import org.ktorm.schema.Table
+import org.
