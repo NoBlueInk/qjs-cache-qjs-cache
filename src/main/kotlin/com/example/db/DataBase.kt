@@ -20,4 +20,7 @@ val Database.productCondition
     get() = this.sequenceOf(ProductConditionTable)
 
 val Database.productUnit
-    get(
+    get() = this.sequenceOf(ProductUnitTable)
+
+val Database.stockColor
+    get() = this.sequenceO
