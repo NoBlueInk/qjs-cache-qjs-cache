@@ -10,4 +10,8 @@ import org.ktorm.entity.sequenceOf
 val Database.product
     get() = this.sequenceOf(ProductTable)
 
-val Database.categ
+val Database.category
+    get() = this.sequenceOf(CategoryTable)
+
+val Database.color
+    get() = this.s
