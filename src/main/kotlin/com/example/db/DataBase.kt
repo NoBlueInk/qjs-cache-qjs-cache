@@ -17,4 +17,7 @@ val Database.color
     get() = this.sequenceOf(ColorTable)
 
 val Database.productCondition
-    get() = this.se
+    get() = this.sequenceOf(ProductConditionTable)
+
+val Database.productUnit
+    get(
