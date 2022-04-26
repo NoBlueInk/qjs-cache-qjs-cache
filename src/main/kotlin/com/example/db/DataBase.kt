@@ -7,4 +7,7 @@ import com.example.data.tables.stockTables.SectionsTable
 import org.ktorm.database.Database
 import org.ktorm.entity.sequenceOf
 
-val D
+val Database.product
+    get() = this.sequenceOf(ProductTable)
+
+val Database.categ
