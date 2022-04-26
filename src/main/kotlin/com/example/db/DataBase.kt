@@ -28,4 +28,8 @@ val Database.stockColor
 val Database.stock
     get() = this.sequenceOf(StockTable)
 
-val
+val Database.stockWeight
+    get() = this.sequenceOf(StockWeightTable)
+
+val Database.supplier
+    get() = this.sequence
