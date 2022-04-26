@@ -32,4 +32,9 @@ val Database.stockWeight
     get() = this.sequenceOf(StockWeightTable)
 
 val Database.supplier
-    get() = this.sequence
+    get() = this.sequenceOf(SupplierTable)
+
+val Database.transfers
+    get() = this.sequenceOf(TransfersTable)
+
+val Datab
