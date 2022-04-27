@@ -46,4 +46,8 @@ val Database.warehouses
 val Database.productTransferMovements
     get() = this.sequenceOf(ProductTransfersMovementTable)
 
-v
+val Database.brands
+    get() = this.sequenceOf(BrandTable)
+
+val Database.sectionApp
+    get() = this.seque
