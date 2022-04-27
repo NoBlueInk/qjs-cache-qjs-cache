@@ -50,4 +50,10 @@ val Database.brands
     get() = this.sequenceOf(BrandTable)
 
 val Database.sectionApp
-    get() = this.seque
+    get() = this.sequenceOf(SectionsTable)
+
+val Database.user
+    get() = this.sequenceOf(UserTable)
+
+val Database.role
+    
