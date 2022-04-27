@@ -43,4 +43,7 @@ val Database.transfersType
 val Database.warehouses
     get() = this.sequenceOf(WarehousesTable)
 
-val Database.productTransfer
+val Database.productTransferMovements
+    get() = this.sequenceOf(ProductTransfersMovementTable)
+
+v
