@@ -56,4 +56,4 @@ val Database.user
     get() = this.sequenceOf(UserTable)
 
 val Database.role
-    
+    get() = this.sequenceOf(RolesTable)
