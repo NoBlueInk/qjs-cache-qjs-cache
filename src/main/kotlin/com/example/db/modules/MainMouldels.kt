@@ -10,4 +10,7 @@ import com.example.security.HashingService
 import com.example.security.SHA256HashingServiceImpl
 import com.example.utils.Constants
 import org.koin.dsl.module
-import or
+import org.ktorm.database.Database
+import org.ktorm.support.mysql.MySqlDialect
+
+val mainModule = m
