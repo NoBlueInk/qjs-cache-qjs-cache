@@ -13,4 +13,9 @@ import org.koin.dsl.module
 import org.ktorm.database.Database
 import org.ktorm.support.mysql.MySqlDialect
 
-val mainModule = m
+val mainModule = module {
+
+    single {
+        Database.connect(
+            url = Constants.STOCKED_DATABASE_URL,
+ 
