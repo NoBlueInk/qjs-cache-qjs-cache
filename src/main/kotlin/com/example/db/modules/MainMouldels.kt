@@ -35,4 +35,11 @@ val mainModule = module {
     /**
     Repositories
      */
-    single<User
+    single<UserRepository> {
+        UserRepositoryImpl(get())
+    }
+
+    /**
+    UseCases
+     */
+    single {
