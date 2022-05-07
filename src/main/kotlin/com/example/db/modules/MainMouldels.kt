@@ -18,4 +18,5 @@ val mainModule = module {
     single {
         Database.connect(
             url = Constants.STOCKED_DATABASE_URL,
- 
+            driver = Constants.STOCKED_DATABASE_DRIVER,
+            user = Con
