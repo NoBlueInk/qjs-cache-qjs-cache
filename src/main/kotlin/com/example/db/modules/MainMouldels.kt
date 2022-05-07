@@ -43,3 +43,8 @@ val mainModule = module {
     UseCases
      */
     single {
+        SignUpUseCase(get())
+    }
+
+    single {
+        SignInUseCase(get
