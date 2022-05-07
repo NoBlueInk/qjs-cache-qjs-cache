@@ -28,4 +28,11 @@ val mainModule = module {
     /**
     Dao
      */
-    single<Use
+    single<UserDao> {
+        UserDaoImpl(get())
+    }
+
+    /**
+    Repositories
+     */
+    single<User
