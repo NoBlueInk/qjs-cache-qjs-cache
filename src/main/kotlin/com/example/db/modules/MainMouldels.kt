@@ -21,3 +21,11 @@ val mainModule = module {
             driver = Constants.STOCKED_DATABASE_DRIVER,
             user = Constants.STOCKED_DATABASE_USER,
             password = Constants.STOCKED_DATABASE_PASSWORD,
+            dialect = MySqlDialect(),
+        )
+    }
+
+    /**
+    Dao
+     */
+    single<Use
