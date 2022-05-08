@@ -47,4 +47,8 @@ val mainModule = module {
     }
 
     single {
-        SignInUseCase(get
+        SignInUseCase(get())
+    }
+
+    single<HashingService> { SHA256HashingServiceImpl() }
+}
