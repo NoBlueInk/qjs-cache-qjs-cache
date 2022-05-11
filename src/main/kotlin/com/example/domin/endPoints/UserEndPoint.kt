@@ -6,4 +6,5 @@ sealed class UserEndPoint(val path:String){
     object SignIn: UserEndPoint(path = "user/sign_in")
     object Authenticate: UserEndPoint(path = "user/authenticate")
     object Secret: UserEndPoint(path = "user/secret")
-    object
+    object UpdatePassword: UserEndPoint(path = "user/update_password")
+    object Dele
