@@ -5,4 +5,6 @@ import com.example.data.entities.productsEntites.BrandEntity
 
 fun BrandEntity.toBrandDto() = BrandDto(
     brandId = brandId,
-    brand
+    brandName = brandName,
+    brandCreateAt = "$brandCreateAt"
+)
