@@ -5,4 +5,6 @@ import com.example.data.entities.productsEntites.ProductConditionEntity
 
 fun ProductConditionEntity.toProductConditionDto() =
     ProductConditionDto(
-        conditionId = condit
+        conditionId = conditionId,
+        conditionName = conditionName,
+        conditionCreated = "$conditionCrea
