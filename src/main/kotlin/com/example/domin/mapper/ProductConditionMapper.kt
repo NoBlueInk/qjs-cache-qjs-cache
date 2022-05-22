@@ -7,4 +7,5 @@ fun ProductConditionEntity.toProductConditionDto() =
     ProductConditionDto(
         conditionId = conditionId,
         conditionName = conditionName,
-        conditionCreated = "$conditionCrea
+        conditionCreated = "$conditionCreated"
+    )
