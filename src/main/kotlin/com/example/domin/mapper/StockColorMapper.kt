@@ -1,4 +1,6 @@
 package com.example.domin.mapper
 
 import com.example.data.dto.product.StockColorDto
-i
+import com.example.data.entities.productsEntites.StockColorEntity
+
+fun StockColorEntity.
