@@ -6,4 +6,6 @@ import com.example.data.entities.productsEntites.StockColorEntity
 fun StockColorEntity.toStockColorDto() =
     StockColorDto(
         colorId = colorId,
-        stockId = stockId.toS
+        stockId = stockId.toStockDto(),
+        quantity = quantity
+    )
