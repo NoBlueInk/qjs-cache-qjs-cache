@@ -6,4 +6,6 @@ import com.example.data.entities.productsEntites.ProductTransfersMovementEntity
 
 fun ProductTransfersMovementEntity.toTransferMovementDto() =
     ProductTransfersMovementDto(
-        productMovementId = productId.t
+        productMovementId = productId.toProductDto(),
+        transferMovementId = transfersId.toTransfersDto()
+    )
