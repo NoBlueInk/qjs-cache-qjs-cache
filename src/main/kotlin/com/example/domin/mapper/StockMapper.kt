@@ -1,3 +1,4 @@
 package com.example.domin.mapper
 
-import c
+import com.example.data.dto.product.StockDto
+import com.example.data.entities.product
