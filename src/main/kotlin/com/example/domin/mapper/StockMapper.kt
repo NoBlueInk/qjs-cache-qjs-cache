@@ -6,4 +6,7 @@ import com.example.data.entities.productsEntites.StockEntity
 fun StockEntity.toStockDto() = StockDto(
     stockId = stockId,
     productId = productId.toProductDto(),
-    warehouseId = warehouseId.toWarehouses
+    warehouseId = warehouseId.toWarehousesDto(),
+    quantityInHand = quantityInHand,
+    productCreated = "$productCreated"
+)
