@@ -6,4 +6,6 @@ import com.example.data.entities.productsEntites.StockWeightEntity
 fun StockWeightEntity.toStockWeightDto() =
     StockWeightDto(
         stockWeightId = stockWeightId,
-        stockId =
+        stockId = stockId.toStockDto(),
+        weight = weight
+    )
