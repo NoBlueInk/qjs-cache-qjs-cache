@@ -5,4 +5,5 @@ import com.example.data.entities.productsEntites.TransfersEntity
 
 fun TransfersEntity.toTransfersDto() = TransfersDto(
     transferId = transferId,
-    stockConditionId = stockCon
+    stockConditionId = stockConditionId.toProductConditionDto(),
+    transferTypeId = transferTypeId.toTransfer
