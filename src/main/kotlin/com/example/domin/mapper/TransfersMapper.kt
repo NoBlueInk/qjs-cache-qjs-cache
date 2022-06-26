@@ -8,4 +8,5 @@ fun TransfersEntity.toTransfersDto() = TransfersDto(
     stockConditionId = stockConditionId.toProductConditionDto(),
     transferTypeId = transferTypeId.toTransfersTypeDto(),
     quantity = quantity,
-    transferMovementCreated =
+    transferMovementCreated = "$transferMovementCreated"
+)
