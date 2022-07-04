@@ -5,4 +5,6 @@ import com.example.data.entities.authEntites.RolesPermissionsEntity
 
 fun RolesPermissionsEntity.toRolesPermissionsDto() =
     RolesPermissionsDto(
-        role = role.toRoleDto(
+        role = role.toRoleDto(),
+        permission = permission.toPermissionDto()
+    )
