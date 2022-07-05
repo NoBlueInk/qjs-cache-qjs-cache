@@ -10,4 +10,7 @@ fun UserEntity.toUserDto() = UserDto(
     userPassword = userPassword,
     userAge = userAge,
     userPhone = userPhone,
-    userAddress = use
+    userAddress = userAddress,
+    userSalt = userSalt
+//    userRegister = userRegister.toString()
+)
