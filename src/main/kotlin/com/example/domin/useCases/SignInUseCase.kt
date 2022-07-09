@@ -19,3 +19,19 @@ class SignInUseCase constructor(
             return BaseResponse.ErrorResponse(message = ResponseMessages.EmptyField.message) as
                     BaseResponse<UserDto>
         }
+
+        if(userDto == null){
+            return BaseResponse.ErrorResponse(message = ResponseMessages.NotFoundUser.message) as
+                    BaseResponse<UserDto>
+        }
+
+        val validationPassword = SaltedHash(hash = userDto.userPassword, salt = userDto.userSalt).verifyPassword(userPassword)
+
+        if(!validationPassword){
+           return BaseResponse.ErrorResponse(message = ResponseMessages.IncorrectPassword.message) as
+                   BaseResponse<UserDto>
+        }
+
+        return BaseResponse.SuccessSignResponse(data = userDto.username.generateToken())
+    }
+}
