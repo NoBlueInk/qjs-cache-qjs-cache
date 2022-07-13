@@ -5,4 +5,7 @@ import com.example.data.repositories.userRepository.UserRepository
 import com.example.utils.BaseResponse
 import com.example.utils.ResponseMessages
 
-class Sign
+class SignUpUseCase constructor(
+    private val userRepository: UserRepository,
+) {
+    suspend opera
