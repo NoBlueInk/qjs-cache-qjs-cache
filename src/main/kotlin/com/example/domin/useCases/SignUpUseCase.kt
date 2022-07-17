@@ -8,4 +8,6 @@ import com.example.utils.ResponseMessages
 class SignUpUseCase constructor(
     private val userRepository: UserRepository,
 ) {
-    suspend opera
+    suspend operator fun invoke(user: UserDto): BaseResponse<UserDto> {
+        if (
+            user.userna
