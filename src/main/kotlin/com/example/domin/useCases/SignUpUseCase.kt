@@ -10,4 +10,6 @@ class SignUpUseCase constructor(
 ) {
     suspend operator fun invoke(user: UserDto): BaseResponse<UserDto> {
         if (
-            user.userna
+            user.username.isEmpty() ||
+            user.userAddress.isEmpty() ||
+            use
