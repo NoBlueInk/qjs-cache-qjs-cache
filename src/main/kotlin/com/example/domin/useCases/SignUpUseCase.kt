@@ -23,4 +23,9 @@ class SignUpUseCase constructor(
 
         if (userRepository.checkIfUserExistByName(username = user.username)) {
             return BaseResponse.ErrorResponse(message = ResponseMessages.UserAlreadyExist.message)
-                    as BaseResponse<User
+                    as BaseResponse<UserDto>
+        }
+
+        userRepository.insertUser(user = user)
+
+        return BaseRespons
