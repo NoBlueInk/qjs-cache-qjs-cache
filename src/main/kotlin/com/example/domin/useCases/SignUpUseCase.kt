@@ -12,4 +12,6 @@ class SignUpUseCase constructor(
         if (
             user.username.isEmpty() ||
             user.userAddress.isEmpty() ||
-            use
+            user.userPassword.isEmpty() ||
+            user.userPhone.isEmpty() ||
+            user.use
