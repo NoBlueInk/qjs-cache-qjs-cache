@@ -14,4 +14,7 @@ class SignUpUseCase constructor(
             user.userAddress.isEmpty() ||
             user.userPassword.isEmpty() ||
             user.userPhone.isEmpty() ||
-            user.use
+            user.userSalt.isEmpty() ||
+            user.userRole == 0
+        ) {
+            return BaseRes
