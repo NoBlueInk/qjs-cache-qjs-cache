@@ -21,4 +21,5 @@ class SignUpUseCase constructor(
                     BaseResponse<UserDto>
         }
 
-        if (userRepository.checkIfUserExi
+        if (userRepository.checkIfUserExistByName(username = user.username)) {
+            return BaseResponse.ErrorResponse(
