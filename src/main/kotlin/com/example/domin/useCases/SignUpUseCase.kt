@@ -18,4 +18,7 @@ class SignUpUseCase constructor(
             user.userRole == 0
         ) {
             return BaseResponse.ErrorResponse(message = ResponseMessages.EmptyField.message) as
-                    Base
+                    BaseResponse<UserDto>
+        }
+
+        if (userRepository.checkIfUserExi
