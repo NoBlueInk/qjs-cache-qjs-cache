@@ -17,4 +17,5 @@ class SignUpUseCase constructor(
             user.userSalt.isEmpty() ||
             user.userRole == 0
         ) {
-            return BaseRes
+            return BaseResponse.ErrorResponse(message = ResponseMessages.EmptyField.message) as
+                    Base
