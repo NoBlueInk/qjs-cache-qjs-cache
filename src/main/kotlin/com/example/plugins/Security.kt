@@ -1,3 +1,6 @@
 package com.example.plugins
 
-im
+import io.ktor.server.auth.*
+import io.ktor.server.auth.jwt.*
+import com.auth0.jwt.JWT
+impo
