@@ -9,4 +9,9 @@ import io.ktor.server.application.*
 
 fun Application.configureSecurity(config: TokenConfig) {
 
-    authentica
+    authentication {
+        jwt {
+            realm = "Access To Stocked"
+            verifier(
+                JWT
+  
