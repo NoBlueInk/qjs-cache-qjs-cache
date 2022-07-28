@@ -17,4 +17,7 @@ fun Application.configureSecurity(config: TokenConfig) {
                     .require(Algorithm.HMAC256(config.secret))
                     .withAudience(config.audience)
                     .withIssuer(config.issuer)
-            
+                    .build()
+            )
+            validate { credential ->
+                if 
