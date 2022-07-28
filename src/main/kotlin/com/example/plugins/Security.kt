@@ -14,4 +14,5 @@ fun Application.configureSecurity(config: TokenConfig) {
             realm = "Access To Stocked"
             verifier(
                 JWT
-  
+                    .require(Algorithm.HMAC256(config.secret))
+                    .withA
