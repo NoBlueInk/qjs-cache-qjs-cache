@@ -20,4 +20,5 @@ fun Application.configureSecurity(config: TokenConfig) {
                     .build()
             )
             validate { credential ->
-                if 
+                if (credential.payload.audience.contains(config.audience)) {
+                  
