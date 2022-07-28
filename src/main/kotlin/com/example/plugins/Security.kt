@@ -15,4 +15,6 @@ fun Application.configureSecurity(config: TokenConfig) {
             verifier(
                 JWT
                     .require(Algorithm.HMAC256(config.secret))
-                    .withA
+                    .withAudience(config.audience)
+                    .withIssuer(config.issuer)
+            
