@@ -21,4 +21,7 @@ fun Application.configureSecurity(config: TokenConfig) {
             )
             validate { credential ->
                 if (credential.payload.audience.contains(config.audience)) {
-                  
+                    JWTPrincipal(credential.payload)
+                } else null
+            }
+   
