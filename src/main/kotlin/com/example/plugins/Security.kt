@@ -24,4 +24,6 @@ fun Application.configureSecurity(config: TokenConfig) {
                     JWTPrincipal(credential.payload)
                 } else null
             }
-   
+        }
+    }
+}
