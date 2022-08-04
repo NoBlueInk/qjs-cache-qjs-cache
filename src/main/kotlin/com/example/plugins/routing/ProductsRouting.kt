@@ -1,3 +1,4 @@
 package com.example.plugins.routing
 
-i
+import com.example.routes.productsRoute.*
+import io.ktor.server.applica
