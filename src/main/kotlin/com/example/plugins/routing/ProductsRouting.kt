@@ -5,4 +5,7 @@ import io.ktor.server.application.*
 import io.ktor.server.routing.*
 
 fun Application.productsConfigRouting() {
-   
+    routing {
+        getAllBrandsRoute()
+        getAllCategoryRoute()
+        getAll
