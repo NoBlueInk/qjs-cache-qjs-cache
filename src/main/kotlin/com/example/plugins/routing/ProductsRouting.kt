@@ -11,4 +11,6 @@ fun Application.productsConfigRouting() {
         getAllColorRoute()
         getAllProductTransfersMovementRoute()
         getAllProductUnitRoute()
-        g
+        getAllProductConditionRoute()
+        getAllSupplierRoute()
+        getAllTransfersRo
