@@ -16,4 +16,7 @@ fun Application.productsConfigRouting() {
         getAllTransfersRoute()
         getAllTransfersTypeRoute()
         getAllWarehousesRoute()
-      
+        getAllProductsRoute()
+        getAllProductsFromStockRoute()
+    }
+}
