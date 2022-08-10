@@ -8,4 +8,7 @@ fun Application.productsConfigRouting() {
     routing {
         getAllBrandsRoute()
         getAllCategoryRoute()
-        getAll
+        getAllColorRoute()
+        getAllProductTransfersMovementRoute()
+        getAllProductUnitRoute()
+        g
