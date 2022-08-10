@@ -4,4 +4,6 @@ import com.example.routes.stockAppRoute.getSectionsRoute
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 
-fun Applic
+fun Application.stockAppConfigurationRouting() {
+    routing {
+        getSectionsRoute()
