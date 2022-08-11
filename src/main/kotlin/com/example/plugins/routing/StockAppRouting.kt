@@ -7,3 +7,5 @@ import io.ktor.server.routing.*
 fun Application.stockAppConfigurationRouting() {
     routing {
         getSectionsRoute()
+    }
+}
