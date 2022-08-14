@@ -12,4 +12,5 @@ fun Application.userConfigRouting() {
         signUpRoute()
         signInRoute()
         authenticateRoute()
-//        deleteUserRoute(useRepositor
+//        deleteUserRoute(useRepository, hashingService)
+//        updatePasswordRoute(useRepository, h
