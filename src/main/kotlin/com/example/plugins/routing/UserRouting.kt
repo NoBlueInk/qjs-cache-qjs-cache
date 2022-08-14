@@ -10,4 +10,6 @@ fun Application.userConfigRouting() {
     routing {
         getSecretInfoRoute()
         signUpRoute()
-        sign
+        signInRoute()
+        authenticateRoute()
+//        deleteUserRoute(useRepositor
