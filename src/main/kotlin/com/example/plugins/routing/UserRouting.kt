@@ -13,4 +13,6 @@ fun Application.userConfigRouting() {
         signInRoute()
         authenticateRoute()
 //        deleteUserRoute(useRepository, hashingService)
-//        updatePasswordRoute(useRepository, h
+//        updatePasswordRoute(useRepository, hashingService, tokenService, tokenConfig)
+    }
+}
