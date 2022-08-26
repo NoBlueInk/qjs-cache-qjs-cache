@@ -5,4 +5,5 @@ import io.ktor.server.application.*
 import io.ktor.server.util.*
 import io.ktor.util.pipeline.*
 
-fun Pipeli
+fun PipelineContext<*, ApplicationCall>.signInParameters(): UserSignInRequest {
+    val use
