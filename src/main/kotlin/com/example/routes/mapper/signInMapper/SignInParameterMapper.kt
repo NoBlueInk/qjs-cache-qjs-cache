@@ -9,4 +9,6 @@ fun PipelineContext<*, ApplicationCall>.signInParameters(): UserSignInRequest {
     val userParameters = call.request.queryParameters
     return UserSignInRequest(
         username = userParameters.getOrFail("name"),
-        password = userParameters.getOrFail("passw
+        password = userParameters.getOrFail("password"),
+    )
+}
