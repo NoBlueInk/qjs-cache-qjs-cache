@@ -5,4 +5,5 @@ import io.ktor.server.application.*
 import io.ktor.server.util.*
 import io.ktor.util.pipeline.*
 
-fun PipelineContext<*, ApplicationCa
+fun PipelineContext<*, ApplicationCall>.userParameters(): UserRegisterRequest {
+    val userParameters = call.request
