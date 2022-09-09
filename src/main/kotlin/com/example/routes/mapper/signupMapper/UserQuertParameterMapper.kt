@@ -8,4 +8,5 @@ import io.ktor.util.pipeline.*
 fun PipelineContext<*, ApplicationCall>.userParameters(): UserRegisterRequest {
     val userParameters = call.request.queryParameters
     return UserRegisterRequest(
-        userRole = userPara
+        userRole = userParameters.getOrFail("role").toInt(),
+        username = userParameters.getOrFail("nam
