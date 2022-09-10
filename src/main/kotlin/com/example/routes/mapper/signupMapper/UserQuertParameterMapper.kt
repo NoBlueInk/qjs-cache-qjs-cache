@@ -9,4 +9,6 @@ fun PipelineContext<*, ApplicationCall>.userParameters(): UserRegisterRequest {
     val userParameters = call.request.queryParameters
     return UserRegisterRequest(
         userRole = userParameters.getOrFail("role").toInt(),
-        username = userParameters.getOrFail("nam
+        username = userParameters.getOrFail("name"),
+        password = userParameters.getOrFail("password"),
+        userAge = userParameters.getOrFail("ag
