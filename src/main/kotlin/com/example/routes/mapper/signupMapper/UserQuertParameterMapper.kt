@@ -11,4 +11,6 @@ fun PipelineContext<*, ApplicationCall>.userParameters(): UserRegisterRequest {
         userRole = userParameters.getOrFail("role").toInt(),
         username = userParameters.getOrFail("name"),
         password = userParameters.getOrFail("password"),
-        userAge = userParameters.getOrFail("ag
+        userAge = userParameters.getOrFail("age").toInt(),
+        userPhone = userParameters.getOrFail("phone"),
+        userAddres
