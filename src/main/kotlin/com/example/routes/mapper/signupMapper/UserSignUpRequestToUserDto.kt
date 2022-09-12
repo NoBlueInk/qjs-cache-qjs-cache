@@ -13,3 +13,8 @@ fun UserRegisterRequest.userRequestToDto(): UserDto {
         username = username,
         userPassword = saltedHash.hash,
         userAge = userAge,
+        userPhone = userPhone,
+        userAddress = userAddress,
+        userSalt = saltedHash.salt
+    )
+}
