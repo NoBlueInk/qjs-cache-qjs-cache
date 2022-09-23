@@ -9,4 +9,7 @@ import io.ktor.server.routing.*
 
 fun Route.getAllBrandsRoute() {
 
-    val productRepository by lazy { ProductRepositoryIm
+    val productRepository by lazy { ProductRepositoryImpl() }
+
+    post(ProductsEndPoint.AllBrandsEndPoint.path) {
+        val brands = productRe
