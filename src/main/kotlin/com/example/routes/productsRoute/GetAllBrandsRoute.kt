@@ -12,4 +12,6 @@ fun Route.getAllBrandsRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
 
     post(ProductsEndPoint.AllBrandsEndPoint.path) {
-        val brands = productRe
+        val brands = productRepository.getAllBrands()
+        if (brands.isEmpty())
+            call.notFoundRes
