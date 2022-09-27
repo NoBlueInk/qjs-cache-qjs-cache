@@ -9,14 +9,13 @@ import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Route.getAllColorRoute() {
-
+fun Route.getAllProductUnitRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
 
-    post(ProductsEndPoint.AllColorsEndPoint.path) {
-        val colors = productRepository.getAllColors()
-        if (colors.isEmpty())
+    post(ProductsEndPoint.AllProductUnitEndPoint.path) {
+        val units = productRepository.getAllProductUnits()
+        if (units.isEmpty())
             call.notFoundResponse()
-        else call.respond(colors)
+        else call.respond(units)
     }
 }
