@@ -11,4 +11,6 @@ fun Route.getAllProductTransfersMovementRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
 
     post(ProductsEndPoint.AllProductTransfersMovementEndPoint.path) {
-        val transfersMovement = productRepository.getAllProductTra
+        val transfersMovement = productRepository.getAllProductTransfersMovement()
+        if (transfersMovement.isEmpty())
+            call.notFoundResp
