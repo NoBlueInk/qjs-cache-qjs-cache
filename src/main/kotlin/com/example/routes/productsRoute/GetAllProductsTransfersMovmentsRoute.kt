@@ -13,4 +13,7 @@ fun Route.getAllProductTransfersMovementRoute() {
     post(ProductsEndPoint.AllProductTransfersMovementEndPoint.path) {
         val transfersMovement = productRepository.getAllProductTransfersMovement()
         if (transfersMovement.isEmpty())
-            call.notFoundResp
+            call.notFoundResponse()
+        else call.respond(transfersMovement)
+    }
+}
