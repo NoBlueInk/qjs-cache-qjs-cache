@@ -9,4 +9,6 @@ import io.ktor.server.routing.*
 
 fun Route.getAllProductConditionRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
-    post(ProductsEndPoint.AllProductConditionEndPoint.path) 
+    post(ProductsEndPoint.AllProductConditionEndPoint.path) {
+        val productConditions = productRepository.getAllProductCondition()
+     
