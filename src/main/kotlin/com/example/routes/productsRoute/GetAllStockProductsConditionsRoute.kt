@@ -12,4 +12,7 @@ fun Route.getAllProductConditionRoute() {
     post(ProductsEndPoint.AllProductConditionEndPoint.path) {
         val productConditions = productRepository.getAllProductCondition()
         if (productConditions.isEmpty())
-            call.notFoundRespo
+            call.notFoundResponse()
+        else call.respond(productConditions)
+    }
+}
