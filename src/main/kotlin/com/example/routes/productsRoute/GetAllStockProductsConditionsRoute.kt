@@ -11,4 +11,5 @@ fun Route.getAllProductConditionRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
     post(ProductsEndPoint.AllProductConditionEndPoint.path) {
         val productConditions = productRepository.getAllProductCondition()
-     
+        if (productConditions.isEmpty())
+            call.notFoundRespo
