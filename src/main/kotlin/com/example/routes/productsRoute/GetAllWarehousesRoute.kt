@@ -7,4 +7,8 @@ import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Route.getAllWarehousesRoute() 
+fun Route.getAllWarehousesRoute() {
+
+    val productRepository by lazy { ProductRepositoryImpl() }
+
+    post(ProductsEndPoint.AllWar
