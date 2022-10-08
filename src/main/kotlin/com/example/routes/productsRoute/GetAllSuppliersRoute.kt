@@ -11,4 +11,6 @@ fun Route.getAllSupplierRoute(){
     val productRepository by lazy { ProductRepositoryImpl() }
 
     post(ProductsEndPoint.AllSupplierEndPoint.path) {
-   
+        val suppliers = productRepository.getAllSupplier()
+        if (suppliers.isEmpty())
+      
