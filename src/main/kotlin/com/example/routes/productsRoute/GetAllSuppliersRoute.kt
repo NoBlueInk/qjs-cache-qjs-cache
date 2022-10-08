@@ -8,4 +8,7 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Route.getAllSupplierRoute(){
-    val productRepository by lazy { ProductReposito
+    val productRepository by lazy { ProductRepositoryImpl() }
+
+    post(ProductsEndPoint.AllSupplierEndPoint.path) {
+   
