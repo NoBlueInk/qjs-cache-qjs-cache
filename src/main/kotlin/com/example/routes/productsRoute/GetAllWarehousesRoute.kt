@@ -4,4 +4,7 @@ import com.example.data.repositories.productRepository.ProductRepositoryImpl
 import com.example.domin.endPoints.ProductsEndPoint
 import com.example.utils.notFoundResponse
 import io.ktor.server.application.*
-import
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+
+fun Route.getAllWarehousesRoute() 
