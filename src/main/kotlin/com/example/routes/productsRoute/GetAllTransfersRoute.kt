@@ -1,3 +1,4 @@
+
 package com.example.routes.productsRoute
 
 import com.example.data.repositories.productRepository.ProductRepositoryImpl
@@ -7,13 +8,13 @@ import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Route.getAllSupplierRoute(){
+fun Route.getAllTransfersRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
 
-    post(ProductsEndPoint.AllSupplierEndPoint.path) {
-        val suppliers = productRepository.getAllSupplier()
-        if (suppliers.isEmpty())
+    post(ProductsEndPoint.AllTransfersEndPoint.path) {
+        val transfers = productRepository.getAllTransfers()
+        if (transfers.isEmpty())
             call.notFoundResponse()
-        else call.respond(suppliers)
+        else call.respond(transfers)
     }
 }
