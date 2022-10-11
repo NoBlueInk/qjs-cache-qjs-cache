@@ -12,4 +12,6 @@ fun Route.getAllWarehousesRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
 
     post(ProductsEndPoint.AllWarehousesEndPoint.path) {
-        val warehouses = productRepository.getAllWarehouses(
+        val warehouses = productRepository.getAllWarehouses()
+        if (warehouses.isEmpty())
+            call.notFoundResponse(
