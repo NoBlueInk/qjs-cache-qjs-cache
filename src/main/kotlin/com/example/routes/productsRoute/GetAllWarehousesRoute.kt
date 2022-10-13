@@ -14,4 +14,7 @@ fun Route.getAllWarehousesRoute() {
     post(ProductsEndPoint.AllWarehousesEndPoint.path) {
         val warehouses = productRepository.getAllWarehouses()
         if (warehouses.isEmpty())
-            call.notFoundResponse(
+            call.notFoundResponse()
+        else call.respond(warehouses)
+    }
+}
