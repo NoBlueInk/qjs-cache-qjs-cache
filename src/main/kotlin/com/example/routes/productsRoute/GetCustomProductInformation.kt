@@ -5,4 +5,8 @@ import com.example.domin.endPoints.ProductsEndPoint
 import com.example.utils.notFoundResponse
 import io.ktor.server.application.*
 import io.ktor.server.response.*
-import io.ktor.serve
+import io.ktor.server.routing.*
+
+//fun Route.getCustomInformation() {
+//
+//    val productRepository by lazy { ProductReposito
