@@ -9,4 +9,7 @@ import io.ktor.server.routing.*
 
 //fun Route.getCustomInformation() {
 //
-//    val productRepository by lazy { ProductReposito
+//    val productRepository by lazy { ProductRepositoryImpl() }
+//
+//    post(ProductsEndPoint.CustomProduct.path) {
+//        val brands = productReposit
