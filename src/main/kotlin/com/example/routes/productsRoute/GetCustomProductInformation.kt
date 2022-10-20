@@ -12,4 +12,6 @@ import io.ktor.server.routing.*
 //    val productRepository by lazy { ProductRepositoryImpl() }
 //
 //    post(ProductsEndPoint.CustomProduct.path) {
-//        val brands = productReposit
+//        val brands = productRepository.getAllBrands()
+//        if (brands.isEmpty())
+//            call.notF
