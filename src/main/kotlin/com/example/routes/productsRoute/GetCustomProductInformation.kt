@@ -14,4 +14,7 @@ import io.ktor.server.routing.*
 //    post(ProductsEndPoint.CustomProduct.path) {
 //        val brands = productRepository.getAllBrands()
 //        if (brands.isEmpty())
-//            call.notF
+//            call.notFoundResponse()
+//        else call.respond(brands)
+//    }
+//}
