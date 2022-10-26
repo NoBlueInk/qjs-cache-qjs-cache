@@ -13,4 +13,7 @@ fun Route.getAllProductsRoute() {
 
     post(ProductsEndPoint.AllProductEndPoint.path) {
         val products = productRepository.getAllProducts()
-        if (products
+        if (products.isEmpty())
+            call.notFoundResponse()
+        else call.respond(products)
+    }
