@@ -5,4 +5,8 @@ import com.example.domin.endPoints.ProductsEndPoint
 import com.example.utils.notFoundResponse
 import io.ktor.server.application.*
 import io.ktor.server.response.*
-i
+import io.ktor.server.routing.*
+
+fun Route.getAllProductsRoute() {
+
+    val productRepositor
