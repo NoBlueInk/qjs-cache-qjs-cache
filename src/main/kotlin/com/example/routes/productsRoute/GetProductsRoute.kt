@@ -17,3 +17,4 @@ fun Route.getAllProductsRoute() {
             call.notFoundResponse()
         else call.respond(products)
     }
+}
