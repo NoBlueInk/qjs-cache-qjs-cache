@@ -10,4 +10,7 @@ import io.ktor.server.routing.*
 fun Route.getAllProductsFromStockRoute() {
     val productRepository by lazy { ProductRepositoryImpl() }
     post(ProductsEndPoint.AllProductFromStockEndPoint.path) {
-        val products = productRepository.getAllProductsFromStocks(
+        val products = productRepository.getAllProductsFromStocks()
+        if (products.isEmpty())
+            call.notFoundResponse()
+   
