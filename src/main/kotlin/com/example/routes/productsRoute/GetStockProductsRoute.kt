@@ -13,4 +13,6 @@ fun Route.getAllProductsFromStockRoute() {
         val products = productRepository.getAllProductsFromStocks()
         if (products.isEmpty())
             call.notFoundResponse()
-   
+        else call.respond(products)
+    }
+}
