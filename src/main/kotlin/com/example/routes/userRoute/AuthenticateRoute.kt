@@ -12,4 +12,6 @@ fun Route.authenticateRoute(){
     authenticate{
         get(UserEndPoint.Authenticate.path){
             call.respond(
-                status = HttpS
+                status = HttpStatusCode.OK,
+                message = AuthResponse(
+                    success = tru
