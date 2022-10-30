@@ -10,4 +10,6 @@ import io.ktor.server.routing.*
 
 fun Route.authenticateRoute(){
     authenticate{
-        ge
+        get(UserEndPoint.Authenticate.path){
+            call.respond(
+                status = HttpS
