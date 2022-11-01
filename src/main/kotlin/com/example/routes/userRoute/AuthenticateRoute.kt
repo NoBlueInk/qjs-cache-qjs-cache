@@ -14,4 +14,7 @@ fun Route.authenticateRoute(){
             call.respond(
                 status = HttpStatusCode.OK,
                 message = AuthResponse(
-                    success = tru
+                    success = true,
+                    token = "",
+                    message = "SUCCESS AUTHENTICATED"
+             
