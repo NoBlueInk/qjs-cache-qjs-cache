@@ -17,4 +17,8 @@ fun Route.authenticateRoute(){
                     success = true,
                     token = "",
                     message = "SUCCESS AUTHENTICATED"
-             
+                )
+            )
+        }
+    }
+}
