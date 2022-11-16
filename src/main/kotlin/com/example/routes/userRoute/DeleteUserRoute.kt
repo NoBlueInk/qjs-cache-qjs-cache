@@ -13,4 +13,8 @@ import io.ktor.server.routing.*
 
 fun Route.deleteUserRoute(
     userDataSource: UserRepository,
-    hashingService: Hashi
+    hashingService: HashingService,
+) {
+    post(UserEndPoint.DeleteUserByUsernameAndPassword.path) {
+
+        val request = call.
