@@ -32,4 +32,6 @@ fun Route.deleteUserRoute(
 
 //        val user = userDataSource.getUserByUserName(request.username)
 
-//     
+//        if (user == null) {
+//            call.respond(
+//                HttpStatusCode.ExpectationFailed,
