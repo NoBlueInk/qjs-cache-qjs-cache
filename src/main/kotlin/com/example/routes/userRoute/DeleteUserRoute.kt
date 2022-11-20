@@ -25,4 +25,6 @@ fun Route.deleteUserRoute(
         val areFieldsBlank = request.password.isBlank() || request.username.isBlank()
         val isPwTooShort = request.password.length < 8
 
-        if (areF
+        if (areFieldsBlank || isPwTooShort) {
+            call.respond(HttpStatusCode.BadGateway)
+            re
