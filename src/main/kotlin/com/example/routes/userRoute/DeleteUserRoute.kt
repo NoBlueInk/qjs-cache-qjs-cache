@@ -17,4 +17,6 @@ fun Route.deleteUserRoute(
 ) {
     post(UserEndPoint.DeleteUserByUsernameAndPassword.path) {
 
-        val request = call.
+        val request = call.receiveOrNull<UserRegisterRequest>() ?: kotlin.run {
+            call.respond(HttpStatusCode.BadRequest)
+ 
