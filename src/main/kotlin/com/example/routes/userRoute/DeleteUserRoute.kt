@@ -22,4 +22,7 @@ fun Route.deleteUserRoute(
             return@post
         }
 
-        val areFieldsBlank = request.password.isBlank() || requ
+        val areFieldsBlank = request.password.isBlank() || request.username.isBlank()
+        val isPwTooShort = request.password.length < 8
+
+        if (areF
