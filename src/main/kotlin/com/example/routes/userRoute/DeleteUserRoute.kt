@@ -35,3 +35,6 @@ fun Route.deleteUserRoute(
 //        if (user == null) {
 //            call.respond(
 //                HttpStatusCode.ExpectationFailed,
+//                message = AuthResponse(
+//                    success = false,
+//     
