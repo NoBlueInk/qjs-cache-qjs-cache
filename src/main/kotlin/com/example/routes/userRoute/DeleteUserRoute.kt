@@ -38,4 +38,7 @@ fun Route.deleteUserRoute(
 //                message = AuthResponse(
 //                    success = false,
 //                    token = "",
-//                    message = "CAN'T FOUND USER INCORRECT USERN
+//                    message = "CAN'T FOUND USER INCORRECT USERNAME OR PASSWORD"
+//                )
+//            )
+//            return@post
