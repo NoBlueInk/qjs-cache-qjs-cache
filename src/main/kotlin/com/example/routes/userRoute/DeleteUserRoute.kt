@@ -19,4 +19,7 @@ fun Route.deleteUserRoute(
 
         val request = call.receiveOrNull<UserRegisterRequest>() ?: kotlin.run {
             call.respond(HttpStatusCode.BadRequest)
- 
+            return@post
+        }
+
+        val areFieldsBlank = request.password.isBlank() || requ
