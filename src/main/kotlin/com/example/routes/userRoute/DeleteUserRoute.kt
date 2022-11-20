@@ -37,4 +37,5 @@ fun Route.deleteUserRoute(
 //                HttpStatusCode.ExpectationFailed,
 //                message = AuthResponse(
 //                    success = false,
-//     
+//                    token = "",
+//                    message = "CAN'T FOUND USER INCORRECT USERN
