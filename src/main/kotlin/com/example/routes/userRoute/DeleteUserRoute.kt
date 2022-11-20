@@ -27,4 +27,9 @@ fun Route.deleteUserRoute(
 
         if (areFieldsBlank || isPwTooShort) {
             call.respond(HttpStatusCode.BadGateway)
-            re
+            return@post
+        }
+
+//        val user = userDataSource.getUserByUserName(request.username)
+
+//     
