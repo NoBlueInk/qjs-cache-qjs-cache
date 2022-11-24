@@ -47,4 +47,10 @@ fun Route.deleteUserRoute(
 //        val isValidPassword = hashingService.verify(
 //            value = request.password,
 //            saltedHash = SaltedHash(
-//                hash = user.userPassword
+//                hash = user.userPassword,
+//                salt = user.userSalt
+//            )
+//        )
+
+//        if (!isValidPassword) {
+//   
