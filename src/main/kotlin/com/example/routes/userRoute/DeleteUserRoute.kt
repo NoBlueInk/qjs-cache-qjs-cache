@@ -53,4 +53,6 @@ fun Route.deleteUserRoute(
 //        )
 
 //        if (!isValidPassword) {
-//            println("Entered hash: ${DigestUtils.sha256Hex("${user.userSalt}${requ
+//            println("Entered hash: ${DigestUtils.sha256Hex("${user.userSalt}${request.password}")}, Hashed PW: ${user.userPassword}")
+//            call.respond(
+//                Http
