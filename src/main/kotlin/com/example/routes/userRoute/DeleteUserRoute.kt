@@ -53,4 +53,4 @@ fun Route.deleteUserRoute(
 //        )
 
 //        if (!isValidPassword) {
-//   
+//            println("Entered hash: ${DigestUtils.sha256Hex("${user.userSalt}${requ
