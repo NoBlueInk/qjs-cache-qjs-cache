@@ -57,4 +57,6 @@ fun Route.deleteUserRoute(
 //            call.respond(
 //                HttpStatusCode.Conflict,
 //                message = AuthResponse(
-//     
+//                    success = false,
+//                    token = "",
+//                    me
