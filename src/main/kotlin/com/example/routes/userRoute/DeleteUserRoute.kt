@@ -59,4 +59,6 @@ fun Route.deleteUserRoute(
 //                message = AuthResponse(
 //                    success = false,
 //                    token = "",
-//                    me
+//                    message = "INCORRECT PASSWORD"
+//                )
+//            )
