@@ -65,4 +65,8 @@ fun Route.deleteUserRoute(
 //            return@post
 //        }
 
-        val deleteUser = userDataSource.dele
+        val deleteUser = userDataSource.deleteUser(request.username)
+
+        if (!deleteUser) {
+            call.respond(
+    
