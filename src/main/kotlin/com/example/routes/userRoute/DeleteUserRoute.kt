@@ -69,4 +69,5 @@ fun Route.deleteUserRoute(
 
         if (!deleteUser) {
             call.respond(
-    
+                status = HttpStatusCode.Conflict,
+                message = AuthResp
