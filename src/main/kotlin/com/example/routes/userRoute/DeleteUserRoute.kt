@@ -81,4 +81,7 @@ fun Route.deleteUserRoute(
 
         call.respond(
             status = HttpStatusCode.OK,
-            message
+            message = AuthResponse(
+                success = true,
+                token = "",
+   
