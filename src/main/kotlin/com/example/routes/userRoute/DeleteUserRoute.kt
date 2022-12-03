@@ -77,4 +77,8 @@ fun Route.deleteUserRoute(
                 )
             )
             return@post
-     
+        }
+
+        call.respond(
+            status = HttpStatusCode.OK,
+            message
