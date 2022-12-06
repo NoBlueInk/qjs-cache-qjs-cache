@@ -84,4 +84,8 @@ fun Route.deleteUserRoute(
             message = AuthResponse(
                 success = true,
                 token = "",
-   
+                message = "SUCCESS DELETE USER"
+            )
+        )
+    }
+}
