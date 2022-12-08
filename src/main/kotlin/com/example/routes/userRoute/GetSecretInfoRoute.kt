@@ -18,4 +18,6 @@ fun Route.getSecretInfoRoute() {
                 status = HttpStatusCode.OK,
                 message = AuthResponse(
                     success = false,
-            
+                    token = "",
+                    message = "YOUR ID IS $userId"
+                )
