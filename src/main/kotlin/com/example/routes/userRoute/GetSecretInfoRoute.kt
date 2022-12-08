@@ -11,4 +11,5 @@ import io.ktor.server.routing.*
 
 fun Route.getSecretInfoRoute() {
     authenticate{
-    
+        get(UserEndPoint.Secret.path){
+            val principal = call.principal<JWTPrinc
