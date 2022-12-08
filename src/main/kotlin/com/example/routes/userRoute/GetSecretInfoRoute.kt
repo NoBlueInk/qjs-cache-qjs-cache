@@ -14,4 +14,6 @@ fun Route.getSecretInfoRoute() {
         get(UserEndPoint.Secret.path){
             val principal = call.principal<JWTPrincipal>()
             val userId = principal?.getClaim("userId", String::class)
-  
+            call.respond(
+                status = HttpStatusCode.OK,
+      
