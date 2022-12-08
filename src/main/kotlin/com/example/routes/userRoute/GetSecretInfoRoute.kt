@@ -7,4 +7,8 @@ import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
 import io.ktor.server.response.*
-impo
+import io.ktor.server.routing.*
+
+fun Route.getSecretInfoRoute() {
+    authenticate{
+    
