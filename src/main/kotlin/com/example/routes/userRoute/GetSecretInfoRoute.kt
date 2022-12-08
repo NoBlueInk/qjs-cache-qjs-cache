@@ -16,4 +16,6 @@ fun Route.getSecretInfoRoute() {
             val userId = principal?.getClaim("userId", String::class)
             call.respond(
                 status = HttpStatusCode.OK,
-      
+                message = AuthResponse(
+                    success = false,
+            
