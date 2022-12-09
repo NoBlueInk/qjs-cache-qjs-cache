@@ -21,3 +21,7 @@ fun Route.getSecretInfoRoute() {
                     token = "",
                     message = "YOUR ID IS $userId"
                 )
+            )
+        }
+    }
+}
