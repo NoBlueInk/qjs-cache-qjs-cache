@@ -9,4 +9,6 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
-fun Rou
+fun Route.signUpRoute() {
+    val userUseCase by inject<SignUpUseCase>()
+    ge
