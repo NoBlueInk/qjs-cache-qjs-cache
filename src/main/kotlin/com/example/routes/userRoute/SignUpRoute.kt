@@ -11,4 +11,6 @@ import org.koin.ktor.ext.inject
 
 fun Route.signUpRoute() {
     val userUseCase by inject<SignUpUseCase>()
-    ge
+    get(UserEndPoint.SignUp.path) {
+        val userParameters = userParameters()
+       
