@@ -13,4 +13,5 @@ fun Route.signUpRoute() {
     val userUseCase by inject<SignUpUseCase>()
     get(UserEndPoint.SignUp.path) {
         val userParameters = userParameters()
-       
+        val signUpUser = userUseCase(userParameters.userRequestToDto())
+        call.respond(m
