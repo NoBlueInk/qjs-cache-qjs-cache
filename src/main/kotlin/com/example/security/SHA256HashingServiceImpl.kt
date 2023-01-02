@@ -6,4 +6,6 @@ import java.security.SecureRandom
 
 class SHA256HashingServiceImpl : HashingService {
 
-    override fun generat
+    override fun generateSaltedHash(value: String, saltedHash: Int): SaltedHash {
+        //get Random Salt Number
+ 
