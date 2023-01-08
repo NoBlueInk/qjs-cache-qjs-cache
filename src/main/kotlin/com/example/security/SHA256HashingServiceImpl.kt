@@ -8,4 +8,4 @@ class SHA256HashingServiceImpl : HashingService {
 
     override fun generateSaltedHash(value: String, saltedHash: Int): SaltedHash {
         //get Random Salt Number
- 
+        val salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(saltedHash
