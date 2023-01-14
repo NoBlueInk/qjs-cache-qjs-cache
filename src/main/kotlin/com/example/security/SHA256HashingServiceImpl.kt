@@ -11,4 +11,6 @@ class SHA256HashingServiceImpl : HashingService {
         val salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(saltedHash)
         // Hex Encoder for Salt
         val saltAsHex = Hex.encodeHexString(salt)
-   
+        // Hash SaltAsHex With User Password
+        // Now, We Have
+      
