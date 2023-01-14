@@ -14,4 +14,8 @@ class SHA256HashingServiceImpl : HashingService {
         // Hash SaltAsHex With User Password
         // Now, We Have
         // Hash( Hex(salt) + value)
-        val hash = DigestUtils.sha256Hex("$saltAsHe
+        val hash = DigestUtils.sha256Hex("$saltAsHex$value")
+
+        return SaltedHash(
+            hash = hash,
+            salt = saltA
