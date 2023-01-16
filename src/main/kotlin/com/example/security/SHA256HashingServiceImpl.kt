@@ -22,4 +22,6 @@ class SHA256HashingServiceImpl : HashingService {
         )
     }
 
-    override fun verify(value: String, saltedHash: SaltedHash): 
+    override fun verify(value: String, saltedHash: SaltedHash): Boolean {
+        // is sha256Hex(the salt we gave to the User + Password) == hash
+        return 
