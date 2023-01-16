@@ -18,4 +18,8 @@ class SHA256HashingServiceImpl : HashingService {
 
         return SaltedHash(
             hash = hash,
-            salt = saltA
+            salt = saltAsHex
+        )
+    }
+
+    override fun verify(value: String, saltedHash: SaltedHash): 
