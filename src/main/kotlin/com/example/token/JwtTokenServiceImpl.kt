@@ -8,4 +8,5 @@ class JwtTokenServiceImpl: TokenService {
     override fun generate(config: TokenConfig, vararg claims: Token): String {
         var token = JWT.create()
             .withAudience(config.audience)
-            .with
+            .withIssuer(config.issuer)
+            .withExpiresAt(Date(System.currentTimeMillis()+config.expi
