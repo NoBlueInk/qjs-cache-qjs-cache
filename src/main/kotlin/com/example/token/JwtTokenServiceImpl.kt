@@ -4,4 +4,6 @@ import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
 import java.util.*
 
-class JwtTokenServiceImpl: Token
+class JwtTokenServiceImpl: TokenService {
+    override fun generate(config: TokenConfig, vararg claims: Token): String {
+  
