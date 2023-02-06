@@ -9,4 +9,7 @@ class JwtTokenServiceImpl: TokenService {
         var token = JWT.create()
             .withAudience(config.audience)
             .withIssuer(config.issuer)
-            .withExpiresAt(Date(System.currentTimeMillis()+config.expi
+            .withExpiresAt(Date(System.currentTimeMillis()+config.expiresIn))
+
+        claims.forEach { claims->
+            token = token.withClaim(claims.nam
