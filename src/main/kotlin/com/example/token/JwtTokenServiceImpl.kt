@@ -14,4 +14,7 @@ class JwtTokenServiceImpl: TokenService {
         claims.forEach { claims->
             token = token.withClaim(claims.name,claims.value)
         }
-        return token.sign(Algorithm.HMAC256(co
+        return token.sign(Algorithm.HMAC256(config.secret))
+    }
+
+}
