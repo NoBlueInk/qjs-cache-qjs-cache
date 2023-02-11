@@ -1,3 +1,5 @@
 package com.example.token
 
-interface To
+interface TokenService {
+    fun generate(config: TokenConfig, vararg claims: Token):String
+}
