@@ -6,4 +6,5 @@ sealed class ResponseMessages(val message: String) {
     object IncorrectPassword : ResponseMessages("INCORRECT PASSWORD")
     object SuccessSignIn : ResponseMessages("SUCCESS SIGN IN")
     object IncorrectRequest : ResponseMessages("INCORRECT REQUEST")
-    object U
+    object UserAlreadyExist : ResponseMessages("USER ALREADY EXIST!")
+    object SuccessSignup : ResponseMessages("SUCCESS 
