@@ -12,4 +12,6 @@ import com.example.utils.Constants.SALTED_HASH_ALGORITHM
 import com.example.utils.Constants.SECRET
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
-impo
+import org.ktorm.database.Database
+import org.ktorm.dsl.*
+import org.ktorm.schema.Col
