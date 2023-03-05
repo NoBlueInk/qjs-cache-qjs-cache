@@ -20,4 +20,5 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
 
-fun Database.checkIfExistByNam
+fun Database.checkIfExistByName(columnName: Column<String>, name: String): Boolean {
+    return this.from(column
