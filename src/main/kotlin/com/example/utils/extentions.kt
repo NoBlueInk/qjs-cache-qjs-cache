@@ -21,4 +21,7 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 fun Database.checkIfExistByName(columnName: Column<String>, name: String): Boolean {
-    return this.from(column
+    return this.from(columnName.table).select().where { columnName eq name }.map {}.isNotEmpty()
+}
+
+fun String.stri
