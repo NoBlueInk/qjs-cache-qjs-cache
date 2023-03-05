@@ -24,4 +24,5 @@ fun Database.checkIfExistByName(columnName: Column<String>, name: String): Boole
     return this.from(columnName.table).select().where { columnName eq name }.map {}.isNotEmpty()
 }
 
-fun String.stri
+fun String.stringToLocalDateTime(): LocalDateTime {
+    return LocalDateTime.parse(this, DateTim
