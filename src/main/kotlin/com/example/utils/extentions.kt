@@ -17,4 +17,7 @@ import org.ktorm.dsl.*
 import org.ktorm.schema.Column
 import java.security.SecureRandom
 import java.time.LocalDateTime
-import java.time
+import java.time.format.DateTimeFormatter
+import java.util.*
+
+fun Database.checkIfExistByNam
