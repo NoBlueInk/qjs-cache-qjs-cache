@@ -28,4 +28,6 @@ fun String.stringToLocalDateTime(): LocalDateTime {
     return LocalDateTime.parse(this, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"));
 }
 
-fun String.generateSaltedHash(): Salted
+fun String.generateSaltedHash(): SaltedHash {
+    // Get Random Salt Number
+    val salt = SecureRandom.getInstance(SALTED_HASH_A
