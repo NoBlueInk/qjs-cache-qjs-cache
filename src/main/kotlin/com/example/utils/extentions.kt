@@ -25,4 +25,7 @@ fun Database.checkIfExistByName(columnName: Column<String>, name: String): Boole
 }
 
 fun String.stringToLocalDateTime(): LocalDateTime {
-    return LocalDateTime.parse(this, DateTim
+    return LocalDateTime.parse(this, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"));
+}
+
+fun String.generateSaltedHash(): Salted
