@@ -30,4 +30,6 @@ fun String.stringToLocalDateTime(): LocalDateTime {
 
 fun String.generateSaltedHash(): SaltedHash {
     // Get Random Salt Number
-    val salt = SecureRandom.getInstance(SALTED_HASH_A
+    val salt = SecureRandom.getInstance(SALTED_HASH_ALGORITHM).generateSeed(32)
+    // Hex Encoder for Salt
+    val saltAsHex = Hex.
