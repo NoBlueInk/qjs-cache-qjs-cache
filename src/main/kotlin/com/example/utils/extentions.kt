@@ -32,4 +32,6 @@ fun String.generateSaltedHash(): SaltedHash {
     // Get Random Salt Number
     val salt = SecureRandom.getInstance(SALTED_HASH_ALGORITHM).generateSeed(32)
     // Hex Encoder for Salt
-    val saltAsHex = Hex.
+    val saltAsHex = Hex.encodeHexString(salt)
+    // Hash SaltAsHex With User Password
+    // Now, We Have
