@@ -37,4 +37,7 @@ fun String.generateSaltedHash(): SaltedHash {
     // Now, We Have
     // Hash( Hex(salt) + value)
     val hash = DigestUtils.sha256Hex("$saltAsHex$this")
-    retu
+    return SaltedHash(hash = hash, salt = saltAsHex)
+}
+
+fun SaltedHash.verifyPassword(password: String): Boolean
