@@ -40,4 +40,9 @@ fun String.generateSaltedHash(): SaltedHash {
     return SaltedHash(hash = hash, salt = saltAsHex)
 }
 
-fun SaltedHash.verifyPassword(password: String): Boolean
+fun SaltedHash.verifyPassword(password: String): Boolean {
+    return DigestUtils.sha256Hex(salt + password) == hash
+}
+
+/**
+ *  String Shou
