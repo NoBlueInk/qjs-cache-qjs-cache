@@ -45,4 +45,8 @@ fun SaltedHash.verifyPassword(password: String): Boolean {
 }
 
 /**
- *  String Shou
+ *  String Should Be UserName
+ */
+fun String.generateToken(): String =
+    JWT.create()
+    
