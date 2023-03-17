@@ -53,3 +53,4 @@ fun String.generateToken(): String =
         .withIssuer(ISSUER)
         .withClaim("username", this)
         .withExpiresAt(Date(System.currentTimeMillis() + REFRESH_TOKEN_EXPIRE_DATE))
+        .sign(Algorithm.HMAC256(SECRET))
