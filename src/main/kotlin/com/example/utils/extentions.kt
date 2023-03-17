@@ -52,4 +52,4 @@ fun String.generateToken(): String =
         .withAudience(AUDIENCE)
         .withIssuer(ISSUER)
         .withClaim("username", this)
-  
+        .withExpiresAt(Date(System.currentTimeMillis() + REFRESH_TOKEN_EXPIRE_DATE))
